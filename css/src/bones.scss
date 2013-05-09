@@ -1,7 +1,78 @@
 @import 'base';
 @import 'colors';
 
+/* =Global
+-------------------- */
 body {
-  color: $primary;
+  font: 13px Helvetica, arial, freesans, clean, sans-serif;
+  color: $font;
+  width: 100%;
 }
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.clearfix {
+  display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+  display: block;
+}
+ 
+* html .clearfix {
+  height: 1%;
+}
+
+small {
+  font-size: 60%;
+  color: lighten($font, 20%);
+}
+
+/* =Typography
+-------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0.9em 0 0.6em 0;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 2.3em;
+}
+
+h3 {
+  font-size: 2.0em;
+}
+
+h4 {
+  font-size: 1.7em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+.subheading {
+  font-weight: 200;
+  color: lighten($font, 20%);
+}
+
+/* =Containers
+-------------------- */
+.container {
+  padding: 20px 25px; 
+}
