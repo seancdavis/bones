@@ -1,25 +1,24 @@
 @import 'base';
 @import 'colors';
+@import 'vars';
+@import 'mixins';
 
 /* =Global
 -------------------- */
 body {
   font: 15px Helvetica, arial, freesans, clean, sans-serif;
+  line-height: normal;
   color: $font;
   width: 100%;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+::selection {
+  color: $contrast;
+  background: $primary;
 }
- 
+
 .clearfix {
-  display: inline-block;
+  @include clearfix;
 }
  
 html[xmlns] .clearfix {
@@ -34,7 +33,7 @@ html[xmlns] .clearfix {
 -------------------- */
 hr {
   border: none;
-  background: $secondary;
+  background: $contrast;
   margin: 0.75em 0;
   height: 1px;
 }
@@ -86,6 +85,7 @@ big {
 
 p {
   margin: 0 0 0.75em 0;
+  line-height: 1.35em;
 }
 
 em {
@@ -97,10 +97,12 @@ strong {
 }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  background: $secondary;
-  padding: 0 0.25em;
-  border: 1px solid darken($secondary, 10%);
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  color: $code;
+  font-size: 13px;
+  background: $contrast;
+  padding: 2px 4px;
+  border: 1px solid darken($contrast, 10%);
 }
 
 a {
@@ -112,16 +114,20 @@ a {
 }
 
 blockquote {
-  margin: 0 0 0.75em 1em;
   padding: 0.75em;
-  color: lighten($font, 20%);
-  border-left: 1px solid darken($secondary, 20%);
+  color: $font;
+  background: $contrast;
+  border: 1px solid darken($contrast, 10%);
+  font-size: 110%;
+  font-weight: 200;
   cite {
+    font-size: 88%;
+    font-weight: 400;
+    color: lighten($font, 20%);
     display: block;
-    font-style: italic;
     margin: 0.75em 0 0.25em 0;
     &:before {
-      content: "\2014 \0020";
+      content: '\2014 \00A0'
     }
   }
 }
@@ -145,8 +151,46 @@ ol {
   list-style-type: decimal;
 }
 
+.text-center {
+  text-align: center;
+}
+
+/* =Grid System
+-------------------- */
+.row {
+  @include clearfix;
+  width: 100%;
+  .column, .columns {
+    float: left;
+    margin: 1em 1%;
+    &:first-child {
+      margin: 1em 1% 1em 0;
+    }
+    &:last-child {
+      margin: 1em 0 1em 1%;
+    }
+  }
+}
+
+.one {
+  width: 6.5%;
+}
+
+.twelve {
+  width: 100%;
+  margin: 1em 0 !important;
+}
+
+.grey-test {
+  background: gray;
+  padding: 10px 0;
+  color: white;
+}
+
 /* =Containers
 -------------------- */
 .container {
   padding: 20px 25px; 
+  max-width: 960px;
+  margin: auto;
 }
