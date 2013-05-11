@@ -162,18 +162,58 @@ ol {
   width: 100%;
   .column, .columns {
     float: left;
-    margin: 1em 1%;
+    margin: 1em 0.5%;
     &:first-child {
-      margin: 1em 1% 1em 0;
+      margin: 1em 0.5% 1em 0;
     }
     &:last-child {
-      margin: 1em 0 1em 1%;
+      margin: 1em 0 1em 0.5%;
     }
   }
 }
 
 .one {
-  width: 6.5%;
+  width: 7.41666666%;
+}
+
+.two {
+  width: 15.8333333%;
+}
+
+.three {
+  width: 24.25%;
+}
+
+.four {
+  width: 32.6666666%;
+}
+
+.five {
+  width: 41.08333333%;
+}
+
+.six {
+  width: 49.5%;
+}
+
+.seven {
+  width: 57.9166666%;
+}
+
+.eight {
+  width: 66.33333333%;
+}
+
+.nine {
+  width: 74.75%;
+}
+
+.ten {
+  width: 83.16666666%;
+}
+
+.eleven {
+  width: 91.58333333%;
 }
 
 .twelve {
