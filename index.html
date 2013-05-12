@@ -9,9 +9,10 @@
     
     <body>
     	<!-- Full-width, colored container -->
-    	<div class="container">
+    	<div class="full-width-container bkg-primary">
         	<h1>Bones</h1>
-    		<hr>
+        </div>
+		<div class="container">
     		<!-- Typography -->
 	    	<h1>Heading 1</h1>
 	    	<h2>Heading 2</h2>
@@ -147,12 +148,27 @@
 	    		<div class="twelve columns grey-test">12</div>
 	    	</div>
 	    	<hr>
-	    	<p>123</p>
+	    	
+	    	<ul class="tabs">
+	    		<li class="active" data-tab="tab-1">Tab 1</li>
+	    		<li data-tab="tab-2">Tab 2</li>
+	    		<li data-tab="tab-3">Tab 3</li>
+	    	</ul>
+	    	<div class="tab-content first-tab" data-tab="tab-1">
+	    		<p>This is Tab 1's content.</p>
+	    	</div>
+	    	<div class="tab-content" data-tab="tab-2">
+	    		<p>This is Tab 2's content.</p>
+	    	</div>
+	    	<div class="tab-content" data-tab="tab-3">
+	    		<p>This is Tab 3's content.</p>
+	    	</div>
 	    	
     	</div>
 
 
         <!-- Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/tabs.js"></script>
     </body>
 </html>

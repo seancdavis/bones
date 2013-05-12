@@ -248,3 +248,43 @@ ol {
   max-width: 960px;
   margin: auto;
 }
+
+.full-width-container {
+  padding: 20px 25px;
+}
+
+/* =Colors
+-------------------- */
+.bkg-primary {
+  background: $primary;
+  color: $contrast;
+}
+
+/* =Tabs
+-------------------- */
+ul.tabs {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid $contrast;
+  li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px -1px 0;
+    border: 1px solid $contrast;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  li.active {
+    border-bottom-color: white;
+  }
+}
+
+.tab-content {
+  display: none;
+}
+
+.first-tab {
+  display: inherit;
+}
+
