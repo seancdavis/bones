@@ -265,17 +265,22 @@ ol {
 ul.tabs {
   list-style-type: none;
   margin: 0 0 10px 0;
-  border-bottom: 1px solid $contrast;
+  border-bottom: 1px solid darken($contrast, 20%);
   li {
     display: inline-block;
-    padding: 10px;
-    margin: 0 10px -1px 0;
-    border: 1px solid $contrast;
+    padding: 8px 10px;
+    margin: 0 0 -1px 10px;
+    border: 1px solid darken($contrast, 10%);
+    border-bottom-color: darken($contrast, 20%);
+    border-radius: 4px 4px 0 0;
     &:hover {
       cursor: pointer;
+      border: 1px solid darken($contrast, 20%);
+      border-bottom-color: transparent;
     }
   }
   li.active {
+    border: 1px solid darken($contrast, 20%);
     border-bottom-color: white;
   }
 }
