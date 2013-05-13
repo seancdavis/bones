@@ -13,6 +13,36 @@
     width: 100%;
     margin: 10px 0;    
   }
+  
+  .nav-container {
+    .nav-toggle {
+      display: inline-block;
+    }
+    .nav {
+      /*display: none;*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: $secondary;
+      height: 100%;
+      width: 200px;
+      z-index: -9999;
+      li {
+        display: block;
+        .dropdown, .sub-dropdown {
+          position: relative;
+          display: inherit; 
+          top: 0;
+          left: 0;
+          padding: 0 0 0 20px;
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  
 }
 
 @media (max-width: 480px) {

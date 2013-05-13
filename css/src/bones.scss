@@ -10,6 +10,7 @@ body {
   line-height: normal;
   color: $font;
   width: 100%;
+  position: absolute;
 }
 
 ::selection {
@@ -29,6 +30,14 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
 /* =Dropdown Menu
 -------------------- */
 .nav-container {
@@ -36,6 +45,16 @@ html[xmlns] .clearfix {
   display: block;
   background: $secondary;
   width: 100%;
+  .nav-toggle {
+    color: darken($contrast, 25%);
+    padding: 5px 20px;
+    float: left;
+    display: none;
+    &:hover {
+      cursor: pointer;
+      color: $contrast;
+    }
+  }
   .nav {
     list-style: none;
     margin: 0;
@@ -59,7 +78,6 @@ html[xmlns] .clearfix {
       display: none;
       position: absolute;
       background: $secondary;
-      border: 1px solid darken($contrast, 25%);
       margin: 0;
       box-shadow: 1px 1px 5px $shadow;
       li {
@@ -73,11 +91,8 @@ html[xmlns] .clearfix {
         }
       }
     }
-    .dropdown {
-      border-top: none;
-      li:hover > .sub-dropdown {
+    .dropdown li:hover > .sub-dropdown {
         display: block;
-      }
     }
     .sub-dropdown {
       left: 100%;
@@ -305,6 +320,7 @@ ol {
   padding: 20px 25px; 
   max-width: 960px;
   margin: auto;
+  background: white;
 }
 
 .full-width-container {
