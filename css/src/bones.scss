@@ -29,6 +29,64 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
+/* =Dropdown Menu
+-------------------- */
+.nav-container {
+  @include clearfix;
+  display: block;
+  background: $secondary;
+  width: 100%;
+  .nav {
+    list-style: none;
+    margin: 0;
+    li {
+      display: inline-block;
+      margin: 0;
+      a {
+        display: block;
+        color: darken($contrast, 25%);
+        padding: 12px 20px;
+        &:hover {
+          text-decoration: none;
+          color: $contrast;
+        }
+      }
+      &:hover > .dropdown {
+        display: block;
+      }
+    }
+    .dropdown, .sub-dropdown {
+      display: none;
+      position: absolute;
+      background: $secondary;
+      border: 1px solid darken($contrast, 25%);
+      margin: 0;
+      box-shadow: 1px 1px 5px $shadow;
+      li {
+        display: block;
+        a {
+          padding: 7px 20px;
+          &:hover {
+            color: darken($contrast, 25%);
+            background: lighten($secondary, 10%);
+          }
+        }
+      }
+    }
+    .dropdown {
+      border-top: none;
+      li:hover > .sub-dropdown {
+        display: block;
+      }
+    }
+    .sub-dropdown {
+      left: 100%;
+      top: 31px;
+      min-width: 100%;
+    }
+  }
+}
+
 /* =Floaters
 -------------------- */
 hr {
