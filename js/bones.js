@@ -1,10 +1,26 @@
 $(document).ready(function(){
 	
+	// vars
 	responsiveSlide = false;
 	
-	$('body').click(function(e){
+	/* Overall Click Event for Body
+	----------------------------------------- */
+	$('body').click(function(e) {
 		var target = $(e.target);
-		
+		bonesClick(target);
+	});
+	
+	/* Responsive Control for Window Resize
+	----------------------------------------- */
+	$(window).resize(function(){
+		if( $('body').width() < 767 ) {
+			$('body').css('left', '0');
+			responsiveSlide = false;
+		}
+	});
+	
+	function bonesClick(target) {
+	
 		/* Responsive Navigation
 		----------------------------------------- */
 		if( target.is('.nav-toggle') && responsiveSlide == false) {
@@ -28,7 +44,5 @@ $(document).ready(function(){
 			});
 		}
 		
-	});
-	
-	
+	}
 });

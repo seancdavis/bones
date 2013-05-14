@@ -34,10 +34,16 @@
           display: inherit; 
           top: 0;
           left: 0;
-          padding: 0 0 0 20px;
+          margin: 0;
           li {
             display: block;
+            a {
+              padding: 7px 0 7px 35px;
+            }
           }
+        }
+        .sub-dropdown li a {
+          padding: 7px 0 7px 50px;
         }
       }
     }
