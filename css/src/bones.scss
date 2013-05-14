@@ -368,3 +368,42 @@ ul.tabs {
   display: inherit;
 }
 
+/* =Tooltip
+-------------------- */
+#bones-tooltip {
+  display: none;
+  position: absolute;
+  max-width: 200px;
+  font: normal 11px "Helvetica Neue", Sans-Serif;
+  padding: 10px;
+  border-radius: 3px;
+  background: $primary;
+  color: $contrast;
+  box-shadow: 0 0 2px $shadow;
+}
+
+/* line 88, src/admin.scss */
+div.arrow-bottom {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #009b77;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -10px;
+  bottom: -10px;
+}
+/* line 99, src/admin.scss */
+div.arrow-bottom:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 0 2px $shadow;
+}
+
+
+
+

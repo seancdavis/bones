@@ -30,6 +30,7 @@
       li {
         display: block;
         .dropdown, .sub-dropdown {
+          box-shadow: none;
           position: relative;
           display: inherit; 
           top: 0;
