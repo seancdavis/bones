@@ -9,65 +9,83 @@ $(document).ready(function(){
 		var target = $(e.target);
 		bonesClick(target);
 	});
+	
 	function bonesClick(target) {
+		
 		/* Responsive Navigation
 		----------------------------------------- */
 		if( target.is('.nav-toggle') && bonesResponsiveSlide == false) {
-			$('body').animate({'left': '200px'}, 500 ); // slides body
-			bonesResponsiveSlide = true // says body is slid out to right
+			// slides body
+			$('body').animate({'left': '200px'}, 500 );
+			// says body is slid out to right
+			bonesResponsiveSlide = true 
 		}
 		else if( bonesResponsiveSlide == true && !target.is('.nav') ) {
-			$('body').animate({'left': '0'}, 500 ); // slides body back to left
+			// slides body back to left
+			$('body').animate({'left': '0'}, 500 );
 			bonesResponsiveSlide = false;
-		}
+		} // <-- RESPONSIVE NAVIGATION
+		
 		/* Tabs
 		----------------------------------------- */
 		if( target.is('.tabs li') ) {
 			// class control for styling
 			$('.tabs li').removeClass('active');
 			$(target).addClass('active');
-			var tab = $(target).attr('data-tab'); // the tab to look for
+			// the tab to look for
+			var tab = $(target).attr('data-tab');
 			// steps through tab content section until finding the right one
 			$('.tab-content').each(function(){
 				if( $(this).attr('data-tab') != tab ) $(this).hide();
 				else $(this).show();
 			});
-		}
-		
-	}
+		} // <-- TABS
+			
+	} // <-- bonesClick() | OVERALL CLICK CONTROL
+	
 	/* Responsive Control for Window Resize
 	----------------------------------------- */
 	$(window).resize(function(){
 		if( $('body').width() < 768 && bonesResponsiveSlide == true ) {
-			$('body').css('left', '0'); // moves body back into place if it's out
+			// moves body back into place if it's out
+			$('body').css('left', '0');
 			bonesResponsiveSlide = false;
 		}
-	});
+	}); // <-- WINDOW RESIZE
+	
 	/* Tooltip
 	----------------------------------------- */
 	if( $('.tooltip').length > 0 ) {
-		$('body').prepend('<div id="bones-tooltip"></div>');
+		bonesTooltipHover = 0; // counter to help build page tooltip elements
 		$('.tooltip').hover(function(){
+			// iterative counter to build unique tooltip IDs				
+			bonesTooltipHover++;
+			// get the element's title and then hide it (temporarily)
 			bonesTooltipContent = $(this).attr('title');
 			$(this).attr('title', '');
-			$('#bones-tooltip').html( bonesTooltipContent + '<div class="arrow-bottom"></div>' );
+			// create (iterative) custom ID for tooltip, then build the element
+			bonesTooltipID = 'bones-tooltip-'+bonesTooltipHover;
+			$('body').prepend('<div id="'+bonesTooltipID+'" class="bones-tooltip">'+bonesTooltipContent+'<div class="arrow-bottom"></div></div>');
+			// calculations for determining where to position the tooltip
 			var thisWidth = $(this).width();
-			var tooltipWidth = $('#bones-tooltip').width();
-			var tooltipHeight = $('#bones-tooltip').height();
-			
+			var tooltipWidth = $('#'+bonesTooltipID).width();
+			var tooltipHeight = $('#'+bonesTooltipID).height();
 			var tooltipLeft = $(this).offset().left + (thisWidth / 2) - (tooltipWidth / 2); 
 			var tooltipTop = $(this).offset().top - tooltipHeight - 30;
-			
-			$('#bones-tooltip').css({ 
+			$('#'+bonesTooltipID).css({ 
 				top : tooltipTop + 'px',
 				left : tooltipLeft + 'px' 
 			});
-			$('#bones-tooltip').fadeIn();
+			// show tooltip
+			$('#'+bonesTooltipID).fadeIn(300);
 		}, function(){
-			$('#bones-tooltip').fadeOut();
+			// hide and destroy tooltip (keeps markup clean)
+			$('#'+bonesTooltipID).hide();
+			$('#'+bonesTooltipID).remove();
+			// replace title (for other applications and plugins that require it)
 			$(this).attr('title', bonesTooltipContent);
 		});
-	}
+	} // <-- TOOLTIP
 });
 
 

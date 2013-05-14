@@ -368,9 +368,9 @@ ul.tabs {
   display: inherit;
 }
 
-/* =Tooltip
+/* =Tooltips
 -------------------- */
-#bones-tooltip {
+.bones-tooltip {
   display: none;
   position: absolute;
   max-width: 200px;
@@ -382,7 +382,6 @@ ul.tabs {
   box-shadow: 0 0 2px $shadow;
 }
 
-/* line 88, src/admin.scss */
 div.arrow-bottom {
   width: 0;
   height: 0;
@@ -393,16 +392,24 @@ div.arrow-bottom {
   left: 50%;
   margin: 0 0 0 -10px;
   bottom: -10px;
+  &:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: 0 0 2px $shadow;
+  }
 }
-/* line 99, src/admin.scss */
-div.arrow-bottom:after {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-shadow: 0 0 2px $shadow;
+
+.define {
+  border-bottom: 1px dotted $font;
+  &:hover {
+    cursor: help;
+  }
 }
+
+
 
 
 
