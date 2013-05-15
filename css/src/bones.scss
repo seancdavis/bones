@@ -22,6 +22,7 @@ CONTENTS
 * Grid System     -> responsive grid based on 12 columns
 * Tabs            -> horizontal tabs and assoicated containers
 * Tooltips        -> all tooltips and related containers -- including specific classes
+* Buttons         -> self-explanatory I'd say
 * Helpers         -> specific classes that perform one or more styles to an element
 
 
@@ -417,6 +418,54 @@ div.arrow-bottom {
   border-bottom: 1px dotted $font;
   &:hover {
     cursor: help;
+  }
+}
+
+/* =Buttons
+-------------------- */
+.button {
+  display: inline-block;
+  color: $contrast;
+  background: lighten($secondary, 5%);
+  text-shadow: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  font-size: 13px;
+  margin: 10px 5px 5px 0;
+  padding: 10px;
+  &:hover {
+    background: darken($secondary, 5%);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  background: $primary;
+  &:hover {
+    background: darken($primary, 5%);
+  }
+}
+
+.btn-warning {
+  background: $warning;
+  &:hover {
+    background: darken($warning, 5%);
+  }
+}
+
+.btn-danger {
+  background: $danger;
+  &:hover {
+    background: darken($danger, 5%);
+  }
+}
+
+.btn-success {
+  background: $success;
+  &:hover {
+    background: darken($success, 5%);
   }
 }
 
