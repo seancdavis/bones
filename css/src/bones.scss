@@ -469,6 +469,24 @@ div.arrow-bottom {
   }
 }
 
+/* =Alerts
+-------------------- */
+.alert-primary {
+  @include alert($primary);
+}
+.alert-success {
+  @include alert($success);
+}
+
+.alert-warning {
+  @include alert($warning);
+}
+
+.alert-danger {
+  @include alert($danger)
+}
+
+
 /* =Helpers
 -------------------- */
 .bkg-primary {
