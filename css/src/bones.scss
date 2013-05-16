@@ -424,49 +424,23 @@ div.arrow-bottom {
 /* =Buttons
 -------------------- */
 .button {
-  display: inline-block;
-  color: $contrast;
-  background: lighten($secondary, 5%);
-  text-shadow: none;
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-  font-size: 13px;
-  margin: 10px 5px 5px 0;
-  padding: 10px;
-  &:hover {
-    background: darken($secondary, 5%);
-    text-decoration: none;
-    cursor: pointer;
-  }
+  @include button( lighten($secondary,5%), darken($secondary,5%) );
 }
 
-.btn-primary {
-  background: $primary;
-  &:hover {
-    background: darken($primary, 5%);
-  }
+.button-primary {
+  @include button( $primary, darken($primary,5%) );
 }
 
-.btn-warning {
-  background: $warning;
-  &:hover {
-    background: darken($warning, 5%);
-  }
+.button-warning {
+  @include button( $warning, darken($warning,5%) );
 }
 
-.btn-danger {
-  background: $danger;
-  &:hover {
-    background: darken($danger, 5%);
-  }
+.button-danger {
+  @include button( $danger, darken($danger,5%) );
 }
 
-.btn-success {
-  background: $success;
-  &:hover {
-    background: darken($success, 5%);
-  }
+.button-success {
+  @include button( $success, darken($success,5%) );
 }
 
 /* =Alerts
@@ -474,6 +448,7 @@ div.arrow-bottom {
 .alert-primary {
   @include alert($primary);
 }
+
 .alert-success {
   @include alert($success);
 }

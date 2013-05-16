@@ -10,6 +10,24 @@
  }
 }
 
+@mixin button($color, $hover_color) {
+  display: inline-block;
+  color: $contrast;
+  background: $color;
+  text-shadow: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  font-size: 13px;
+  margin: 5px 5px 0 0;
+  padding: 10px;
+  &:hover {
+    background: $hover_color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
 @mixin alert($color) {
   display: block;
   margin: 5px 0;
@@ -17,3 +35,5 @@
   background: $color;
   color: $contrast;
 }
+
+
