@@ -28,6 +28,16 @@
   }
 }
 
+@mixin crop_square($size) {
+  margin: 5px;
+  display: inline-block;
+  width: $size;
+  height: $size;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @mixin alert($color) {
   display: block;
   margin: 5px 0;

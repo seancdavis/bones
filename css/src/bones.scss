@@ -458,9 +458,61 @@ div.arrow-bottom {
 }
 
 .alert-danger {
-  @include alert($danger)
+  @include alert($danger);
 }
 
+/* =Images
+-------------------- */
+img {
+  margin: 5px;
+}
+
+img.small {
+  width: $img_small;
+}
+
+img.medium {
+  width: $img_medium;
+}
+
+img.large {
+  width: $img_large;
+}
+
+img.stretch {
+  width: 100%;
+}
+
+div.crop-small {
+  @include crop_square($img_small);
+}
+
+div.crop-medium {
+  @include crop_square($img_medium);
+}
+
+div.crop-large {
+  @include crop_square($img_large);
+}
+
+img.rounded {
+  border-radius: 10px;
+}
+
+img.polaroid {
+  border: 5px solid #FFFFFF;
+  outline: 1px solid darken($contrast, 10%);
+}
+
+.crop-panoramic {
+  width: 100%;
+  height: 200px;
+  margin: 5px 0;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* =Helpers
 -------------------- */

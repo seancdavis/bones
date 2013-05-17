@@ -86,6 +86,26 @@ $(document).ready(function(){
 			$(this).attr('title', bonesTooltipContent);
 		});
 	} // <-- TOOLTIP
+	
+	/* Images
+	----------------------------------------- */
+	if( $('img.crop').length > 0 ) {
+		$('img.crop').each(function(){
+			if( $(this).hasClass('large') ) var size = 'large';
+			else if( $(this).hasClass('medium') ) var size = 'medium';
+			else var size = 'small';
+			var src = $(this).attr('src');
+			$(this).before('<div class="crop-'+size+'" style="background-image:url('+src+');"></div>');
+			$(this).remove();
+		});
+	}
+	if( $('img.panoramic').length > 0 ) {
+		$('img.panoramic').each(function(){
+			var src = $(this).attr('src');
+			$(this).before('<div class="crop-panoramic" style="background-image:url('+src+');"></div>');
+			$(this).remove();
+		});
+	}
 });
 
 
