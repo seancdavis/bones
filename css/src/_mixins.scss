@@ -28,14 +28,16 @@
   }
 }
 
-@mixin crop_square($size) {
-  margin: 5px;
+@mixin img_crop() {
   display: inline-block;
-  width: $size;
-  height: $size;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  margin: 5px;
+  img {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+  }
 }
 
 @mixin alert($color) {
