@@ -465,6 +465,7 @@ div.arrow-bottom {
 -------------------- */
 img {
   margin: 5px;
+  width: 100%;
 }
 
 img.small {
@@ -477,10 +478,6 @@ img.medium {
 
 img.large {
   width: $img_large;
-}
-
-img.stretch {
-  width: 100%;
 }
 
 div.crop-small {
