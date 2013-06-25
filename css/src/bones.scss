@@ -23,6 +23,7 @@ CONTENTS
 * Tabs            -> horizontal tabs and assoicated containers
 * Tooltips        -> all tooltips and related containers -- including specific classes
 * Buttons         -> self-explanatory I'd say
+* Forms           -> standard form contents
 * Helpers         -> specific classes that perform one or more styles to an element
 * Responsive      -> breakpoints for responsive design
 
@@ -450,6 +451,24 @@ div.arrow-bottom {
 
 .button-success {
   @include button( $success, darken($success,5%) );
+}
+
+/* =Forms
+-------------------- */
+label {
+  display: block;
+}
+
+input, textarea {
+  display: block;
+  font-size: 1em;
+  color: $font;
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-weight: 200;
+  border-radius: 0;
+  &:focus {
+    outline: 1px solid $primary;
+  }
 }
 
 /* =Alerts
