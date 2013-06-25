@@ -154,32 +154,38 @@ hr {
 -------------------- */
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-weight: 600;
   margin: 0.75em 0 0.6em 0;
 }
 
 h1 {
-  font-size: 2.6em;
-}
-
-h2 {
   font-size: 2.3em;
 }
 
+h2 {
+  font-size: 1.9em;
+  margin: 1.0em 0 0.25em 0;
+}
+
 h3 {
-  font-size: 2.0em;
+  font-size: 1.65em;
+  font-weight: 400;
+  margin: 1.0em 0 0.25em 0;
 }
 
 h4 {
-  font-size: 1.7em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin: 1.1em 0 0 0;
 }
 
 h5 {
-  font-size: 1.4em;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 h6 {
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 
 /* Subheadings */
@@ -204,6 +210,7 @@ code {
 }
 
 pre {
+  margin: 1.25em 0;
   padding: 0.75em;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   background: $contrast;
