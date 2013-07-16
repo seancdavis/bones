@@ -469,6 +469,9 @@ input, textarea {
   &:focus {
     outline: 1px solid $primary;
   }
+  &[type=submit] {
+    @include button( $primary, darken($primary,5%) );
+  }
 }
 
 /* =Alerts
