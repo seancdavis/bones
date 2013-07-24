@@ -434,11 +434,15 @@ div.arrow-bottom {
 /* =Buttons
 -------------------- */
 .button {
-  @include button( lighten($secondary,5%), darken($secondary,5%) );
+  @include button( lighten($secondary,5%), $primary );
 }
 
 .button-primary {
   @include button( $primary, darken($primary,5%) );
+}
+
+.button-secondary {
+  @include button( lighten($secondary,5%), darken($secondary,5%) );
 }
 
 .button-warning {
