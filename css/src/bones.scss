@@ -457,6 +457,15 @@ div.arrow-bottom {
   @include button( $success, darken($success,5%) );
 }
 
+.button-group {
+  
+  margin: 5px 15px 5px 0;
+  
+  a {
+    margin: 0 -4px 0 0;
+  }
+}
+
 /* =Forms
 -------------------- */
 label {
