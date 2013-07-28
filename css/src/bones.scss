@@ -483,23 +483,27 @@ div.arrow-bottom {
 
 /* =Forms
 -------------------- */
-label {
-  display: block;
-}
+form {
+  label {
+    display: block;
+  }
 
-input, textarea {
-  display: block;
-  font-size: 1em;
-  color: $font;
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
-  font-weight: 200;
-  border-radius: 0;
-  &:focus {
-    outline: 1px solid $primary;
-  }
-  &[type=submit] {
-    @include button( $primary, darken($primary,5%) );
-  }
+  input, textarea {
+    display: block;
+    font-size: 1em;
+    color: $font;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-weight: 200;
+    border-radius: 0;
+    border: 1px solid $contrast;
+    &:focus {
+      background-color: $contrast;
+      outline: none;
+    }
+    &[type=submit] {
+      @include button( $primary, darken($primary,5%) );
+    }
+  }  
 }
 
 /* =Alerts
