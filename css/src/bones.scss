@@ -20,6 +20,7 @@ CONTENTS
     * Characters
     * Lists
 * Grid System     -> responsive grid based on 12 columns
+* Tables          ->
 * Tabs            -> horizontal tabs and assoicated containers
 * Tooltips        -> all tooltips and related containers -- including specific classes
 * Buttons         -> self-explanatory I'd say
@@ -355,6 +356,20 @@ ol {
 .twelve {
   width: 100%;
   margin: 1em 0 !important;
+}
+
+/* =Tables
+-------------------- */
+table {
+  width: 100%;
+  vertical-align: middle;
+  
+  tr {
+    
+    td {
+     padding: 10px 0;
+    }    
+  }
 }
 
 /* =Tabs
