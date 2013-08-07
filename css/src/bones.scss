@@ -26,6 +26,7 @@ CONTENTS
 * Buttons         -> self-explanatory I'd say
 * Forms           -> standard form contents
 * Helpers         -> specific classes that perform one or more styles to an element
+* Icons           -> custom ico.moon icons
 * Responsive      -> breakpoints for responsive design
 
 
@@ -603,6 +604,10 @@ div.img-panoramic {
   text-align: center;
 }
 
+/* =Icons
+-------------------- */
+@import 'icons';
+
 /* =Responsive
 -------------------- */
 /* Landscape Tablets */
@@ -668,6 +673,4 @@ div.img-panoramic {
 @media (max-width: 320px) {
   
 }
-
-
 
