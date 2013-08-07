@@ -224,6 +224,13 @@ pre {
   word-wrap: break-word;
   white-space: pre;
   white-space: pre-wrap;
+  
+  code {
+    color: $font;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
 }
 
 blockquote {
