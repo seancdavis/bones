@@ -1,1 +1,35 @@
-@import 'vendor/normalize';
+/*
+==========================
+Bones CSS Framework
+==========================
+
+This is the manifest file for Bones' CSS. It's purpose is to bring all files together.
+
+--------------------------
+
+docs on using files coming ...
+
+*/
+
+/* 
+--------------------------
+VENDOR ASSETS
+-------------------------- */
+@import 'compass';
+@import 'blueprint/grid';
+@import 'vendor/normalize'; // normalizes for cross-browser consistency
+
+/* 
+--------------------------
+VARIABLES
+-------------------------- */
+
+/* 
+--------------------------
+MIXINS
+-------------------------- */
+
+/* 
+--------------------------
+PARTIALS
+-------------------------- */
