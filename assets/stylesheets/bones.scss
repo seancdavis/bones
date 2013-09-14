@@ -16,20 +16,22 @@ docs on using files coming ...
 VENDOR ASSETS
 -------------------------- */
 @import 'compass';
-@import 'blueprint/grid';
 @import 'vendor/normalize'; // normalizes for cross-browser consistency
 
 /* 
 --------------------------
 VARIABLES
 -------------------------- */
+@import 'variables/grid';
 
 /* 
 --------------------------
 MIXINS
 -------------------------- */
+@import 'mixins/grid';
 
 /* 
 --------------------------
 PARTIALS
 -------------------------- */
+@import 'partials/grid';
