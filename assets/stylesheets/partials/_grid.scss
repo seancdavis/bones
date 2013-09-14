@@ -1,19 +1,23 @@
-div.container {
-  width: $container-width;
+.container {
+  max-width: $container-width;
   margin: auto;
   padding: $container-padding;
-  background: #efefef; // TEMP
+  @include clearfix;
+  clear: both;
+  display: block;
+  border: 1px #efefef solid; // temp
 }
 
 .row {
   width: 100%;
+  float: left;
 }
 
 .column {
   display: inline-block;
-  margin: $grid-col-margin;
-  padding: $grid-col-padding;
-  background: darken(#efefef, 10%);
+  float: left;
+  margin: $grid-col-margin-top-bottom $grid-col-margin;
+  padding: $grid-col-padding-top-bottom $grid-col-padding;
 }
 
 .span-full {
