@@ -22,7 +22,11 @@ VENDOR ASSETS
 --------------------------
 VARIABLES
 -------------------------- */
+@import 'variables/colors';
+@import 'variables/globals';
 @import 'variables/grid';
+@import 'variables/typography';
+@import 'variables/code';
 
 /* 
 --------------------------
@@ -30,9 +34,13 @@ MIXINS
 -------------------------- */
 @import 'mixins/globals';
 @import 'mixins/grid';
+@import 'mixins/typography';
 
 /* 
 --------------------------
 PARTIALS
 -------------------------- */
+@import 'partials/globals';
 @import 'partials/grid';
+@import 'partials/typography';
+@import 'partials/code';

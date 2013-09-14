@@ -1,0 +1,17 @@
+* {
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  font-weight: $default-font-weight;
+  color: $default-color;
+  line-height: $default-line-height;
+}
+
+.container {
+  max-width: $container-width;
+  margin: auto;
+  padding: $container-padding;
+  @include clearfix;
+  clear: both;
+  display: block;
+  border: 1px #efefef solid; // temp
+}

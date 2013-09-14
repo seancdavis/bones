@@ -1,0 +1,109 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: $heading-margin;
+  color: $heading-color;
+}
+
+h1 {
+  @include heading($h1-font-size, $h1-font-weight, $h1-caps);
+}
+
+h2 {
+  @include heading($h2-font-size, $h2-font-weight, $h2-caps);
+}
+
+h3 {
+  @include heading($h3-font-size, $h3-font-weight, $h3-caps);
+}
+
+h4 {
+  @include heading($h4-font-size, $h4-font-weight, $h4-caps);
+}
+
+h5 {
+  @include heading($h5-font-size, $h5-font-weight, $h5-caps);
+}
+
+h6 {
+  @include heading($h6-font-size, $h6-font-weight, $h6-caps);
+}
+
+.subheading {
+  font-weight: $subheading-font-weight;
+  color: $subheading-color;
+}
+
+h1.subheading {
+  @include subheading($h1-font-size);
+}
+
+h2.subheading {
+  @include subheading($h2-font-size);
+}
+
+h3.subheading {
+  @include subheading($h3-font-size);
+}
+
+h4.subheading {
+  @include subheading($h4-font-size);
+}
+
+h5.subheading {
+  @include subheading($h5-font-size);
+}
+
+h6.subheading {
+  @include subheading($h6-font-size);
+}
+
+p {
+  font-weight: $paragraph-font-weight;
+  margin: $paragraph-margin;
+  line-height: $paragraph-line-height;
+  color: $paragraph-color;
+}
+
+blockquote {
+  padding: 0.75em;
+  color: $font;
+  background: $code-color;
+  border: 1px solid darken($code-color, 10%);
+  font-size: 110%;
+  font-weight: 200;
+  cite {
+    font-size: 88%;
+    font-weight: 400;
+    color: lighten($font, 20%);
+    display: block;
+    margin: 0.75em 0 0.25em 0;
+    &:before {
+      content: '\2014 \00A0'
+    }
+  }
+}
+
+/* Characters */
+a {
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+small {
+  font-size: 60%;
+  color: lighten($font, 20%);
+}
+
+big {
+  font-size: 140%;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}

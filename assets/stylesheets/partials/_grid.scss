@@ -1,13 +1,3 @@
-.container {
-  max-width: $container-width;
-  margin: auto;
-  padding: $container-padding;
-  @include clearfix;
-  clear: both;
-  display: block;
-  border: 1px #efefef solid; // temp
-}
-
 .row {
   width: 100%;
   float: left;
@@ -71,4 +61,52 @@
 
 .span-12 {
   @include column-width(12);
+}
+
+.span-13 {
+  @include column-width(13);
+}
+
+.span-14 {
+  @include column-width(14);
+}
+
+.span-15 {
+  @include column-width(15);
+}
+
+.span-16 {
+  @include column-width(16);
+}
+
+.span-17 {
+  @include column-width(17);
+}
+
+.span-18 {
+  @include column-width(18);
+}
+
+.span-19 {
+  @include column-width(19);
+}
+
+.span-20 {
+  @include column-width(20);
+}
+
+.span-21 {
+  @include column-width(21);
+}
+
+.span-22 {
+  @include column-width(22);
+}
+
+.span-23 {
+  @include column-width(23);
+}
+
+.span-24 {
+  @include column-width(24);
 }
