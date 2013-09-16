@@ -4,7 +4,7 @@ code {
   font-size: $code-font-size;
   background: $code-background;
   padding: $code-padding;
-  border: $code-border;
+  @include border($code-border)
 }
 
 pre {
@@ -13,20 +13,23 @@ pre {
   font-family: $code-font-family;
   background: $code-block-background;
   color: $code-block-color;
-  border: $code-block-border;
+  @include border($code-block-border);
   font-size: $code-block-font-size;
   line-height: $code-block-line-height;
   display: block;
-  word-break: break-all;
-  word-wrap: break-word;
   white-space: pre;
-  white-space: pre-wrap;
+  overflow: auto;
   
   code {
     color: $code-block-color;
     background: transparent;
     padding: 0;
     border: none;
+  }
+  
+  span {
+    font-family: $code-block-font-family;
+    font-size: $code-block-font-size;
   }
 }
 

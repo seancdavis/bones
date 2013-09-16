@@ -1,12 +1,12 @@
-$code-font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+$code-font-family: Consolas, monospace;
 $code-color: $code;
-$code-font-size: 13px;
+$code-font-size: 12px;
 $code-background: $accent-light;
-$code-padding: 2px 4px;
-$code-border: 1px solid $accent-light-dark;
+$code-padding: 1px 2px;
+$code-border: $accent-light-dark;
 
 $code-block-margin: 1.25em 0;
-$code-block-padding: 0.75em;
+$code-block-padding: 1.25em 0.75em;
 $code-block-font-family: $code-font-family;
 $code-block-color: $font;
 $code-block-background: $accent-light;

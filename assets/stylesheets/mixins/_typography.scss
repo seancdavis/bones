@@ -1,9 +1,5 @@
-@mixin heading($size, $weight, $caps: false) {
+@mixin heading($size) {
   font-size: $size;
-  font-weight: $weight;
-  @if $caps == true {
-    text-transform: uppercase;
-  }  
 }
 
 @mixin subheading($size) {

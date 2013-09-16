@@ -1,5 +1,12 @@
+// ALL SIZING IS RELATIVE TO THIS VALUE
+$default-font-size: 16px;
+
 $default-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$default-font-size: 1em;
 $default-font-weight: 200;
 $default-line-height: 1.25em;
 $default-color: $font;
+$default-margin: 0.75em 0;
+
+$hr-color: $accent-light-dark;
+$hr-height: 1px;
+$hr-margin: $default-margin;

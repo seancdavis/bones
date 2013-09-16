@@ -9,3 +9,7 @@
     height: 0;
  }
 }
+
+@mixin border($color: $accent-light-dark, $weight: 1px, $style: solid) {
+  border: $weight $style $color;
+}

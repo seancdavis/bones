@@ -15,3 +15,10 @@
   display: block;
   border: 1px #efefef solid; // temp
 }
+
+hr {
+  border: none;
+  background: $hr-color;
+  margin: $hr-margin;
+  height: $hr-height;
+}

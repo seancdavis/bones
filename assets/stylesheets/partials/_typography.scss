@@ -1,30 +1,39 @@
 h1, h2, h3, h4, h5, h6 {
   margin: $heading-margin;
   color: $heading-color;
+  font-weight: $heading-font-weight;
+  @if $heading-caps == true {
+    text-transform: uppercase;
+  }
+  
+  small {
+    font-size: $heading-small-factor;
+    color: $heading-small-color;
+  }
 }
 
 h1 {
-  @include heading($h1-font-size, $h1-font-weight, $h1-caps);
+  @include heading($h1-font-size);
 }
 
 h2 {
-  @include heading($h2-font-size, $h2-font-weight, $h2-caps);
+  @include heading($h2-font-size);
 }
 
 h3 {
-  @include heading($h3-font-size, $h3-font-weight, $h3-caps);
+  @include heading($h3-font-size);
 }
 
 h4 {
-  @include heading($h4-font-size, $h4-font-weight, $h4-caps);
+  @include heading($h4-font-size);
 }
 
 h5 {
-  @include heading($h5-font-size, $h5-font-weight, $h5-caps);
+  @include heading($h5-font-size);
 }
 
 h6 {
-  @include heading($h6-font-size, $h6-font-weight, $h6-caps);
+  @include heading($h6-font-size);
 }
 
 .subheading {
@@ -64,40 +73,45 @@ p {
 }
 
 blockquote {
-  padding: 0.75em;
-  color: $font;
-  background: $code-color;
-  border: 1px solid darken($code-color, 10%);
-  font-size: 110%;
-  font-weight: 200;
-  cite {
-    font-size: 88%;
-    font-weight: 400;
-    color: lighten($font, 20%);
-    display: block;
-    margin: 0.75em 0 0.25em 0;
-    &:before {
-      content: '\2014 \00A0'
-    }
+  padding: $blockquote-padding;
+  margin: $blockquote-margin;
+  background: $blockquote-background;
+  border-left: $blockquote-border-left;
+  font-size: $blockquote-font-size;
+  
+  code {
+    border: none;
+    background: transparent;
+    font-size: $blockquote-font-size;
   }
 }
 
-/* Characters */
 a {
-  color: $primary;
-  text-decoration: none;
-  &:hover {
+  color: $link-color;
+  @if $link-underline == true {
     text-decoration: underline;
+  }
+  @else {
+    text-decoration: none;
+  }
+  
+  &:hover {
+    color: $link-hover-color;
+    @if $link-hover-underline == true {
+      text-decoration: underline;
+    }
+    @else {
+      text-decoration: none;
+    }   
   }
 }
 
 small {
-  font-size: 60%;
-  color: lighten($font, 20%);
+  font-size: $small-font-factor;
 }
 
 big {
-  font-size: 140%;
+  font-size: $big-font-factor;
 }
 
 em {
