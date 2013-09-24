@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6 {
   @if $heading-caps == true {
     text-transform: uppercase;
   }
-  
+
   small {
     font-size: $heading-small-factor;
     color: $heading-small-color;
@@ -78,7 +78,7 @@ blockquote {
   background: $blockquote-background;
   border-left: $blockquote-border-left;
   font-size: $blockquote-font-size;
-  
+
   code {
     border: none;
     background: transparent;
@@ -94,7 +94,7 @@ a {
   @else {
     text-decoration: none;
   }
-  
+
   &:hover {
     color: $link-hover-color;
     @if $link-hover-underline == true {
@@ -102,7 +102,7 @@ a {
     }
     @else {
       text-decoration: none;
-    }   
+    }
   }
 }
 
@@ -119,5 +119,46 @@ em {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: $strong-font-weight;
+}
+
+ul {
+  margin-left: $ul-margin-left-level-1;
+  list-style-type: $ul-style-type;
+  ul, ul ul {
+    margin-left: $ul-margin-left-level-2;
+  }
+  li {
+    line-height: $ul-line-height;
+  }
+}
+
+ol {
+  margin: $ol-margin-left-level-1;
+  ol, ol ol {
+    margin: $ol-margin-left-level-2;
+  }
+  li {
+    line-height: $ol-line-height;
+  }
+}
+
+ul.disc {
+  @include unordered-list(disc);
+}
+
+ul.circle {
+  @include unordered-list(circle);
+}
+
+ul.square {
+  @include unordered-list(square);
+}
+
+ul.no-bullet {
+  @include unordered-list(none);
+  margin-left: $ul-margin-left-level-1 - 20px;
+  ul, ul ul {
+    margin-left: $ul-margin-left-level-2 - 20px;
+  }
 }

@@ -44,3 +44,15 @@ $link-hover-underline: true;
 // individual characters
 $small-font-factor: 60%;
 $big-font-factor: 140%;
+$strong-font-weight: 600;
+
+// unordered lists
+$ul-margin-left-level-1: -20px;
+$ul-margin-left-level-2: 0;
+$ul-style-type: disc;
+$ul-line-height: 1.5;
+
+// ordered lists
+$ol-margin-left-level-1: $ul-margin-left-level-1;
+$ol-margin-left-level-2: $ul-margin-left-level-2;
+$ol-line-height: $ul-line-height;
