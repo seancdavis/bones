@@ -1,4 +1,4 @@
-@mixin button($color: $accent-light, $background-color: $primary, $hover-background-color: $primary-dark) {
+@mixin button($color: $accent-light, $background-color: $primary, $hover-background-color: $primary-dark, $active-background-color: $primary-darker) {
   color: $color;
   background-color: $background-color;
   display: inline-block;
@@ -10,6 +10,9 @@
   &:hover {
     background-color: $hover-background-color;
     cursor: pointer;
+  }
+  &:active {
+    background-color: $active-background-color;
   }
 }
 

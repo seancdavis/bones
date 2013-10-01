@@ -1,9 +1,9 @@
 button {
-  @include button();
+  @include button($button-color, $button-background-color, $button-hover-background-color, $button-active-background-color);
 }
 
 a.button, .button {
-  @include button();
+  @include button($button-color, $button-background-color, $button-hover-background-color, $button-active-background-color);
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -11,5 +11,18 @@ a.button, .button {
 }
 
 input[type=submit], form > input[type=submit] {
-  @include button();
+  @include button($button-color, $button-background-color, $button-hover-background-color, $button-active-background-color);
 }
+
+button.huge, a.button.huge {
+  font-size: $button-huge-font-size;
+}
+
+button.large, a.button.large {
+  font-size: $button-large-font-size;
+}
+
+button.small, a.button.small {
+  font-size: $button-small-font-size;
+}
+
