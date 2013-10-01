@@ -1,0 +1,15 @@
+button {
+  @include button();
+}
+
+a.button, .button {
+  @include button();
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input[type=submit], form > input[type=submit] {
+  @include button();
+}

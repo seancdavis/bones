@@ -1,0 +1,15 @@
+@mixin button($color: $accent-light, $background-color: $primary, $hover-background-color: $primary-dark) {
+  color: $color;
+  background-color: $background-color;
+  display: inline-block;
+  border: $button-border;
+  padding: $button-padding;
+  margin: $button-margin;
+  font-size: $button-font-size;
+  line-height: $button-font-size;
+  &:hover {
+    background-color: $hover-background-color;
+    cursor: pointer;
+  }
+}
+
