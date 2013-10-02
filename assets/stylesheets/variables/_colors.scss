@@ -39,7 +39,17 @@ $accent-light-dark:      darken($accent-light, 5%);
 $accent-light-darker:    darken($accent-light, 15%);
 $accent-light-darkest:   darken($accent-light, 25%);
 
-$accent-dark: #444444; // dark
+$success-dark:      darken($success, 5%);
+$success-darker:    darken($success, 15%);
+$success-darkest:   darken($success, 25%);
+
+$warning-dark:      darken($warning, 5%);
+$warning-darker:    darken($warning, 15%);
+$warning-darkest:   darken($warning, 25%);
+
+$danger-dark:      darken($danger, 5%);
+$danger-darker:    darken($danger, 15%);
+$danger-darkest:   darken($danger, 25%);
 
 // groups
 $font: $accent-dark;
