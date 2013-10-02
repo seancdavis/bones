@@ -33,6 +33,22 @@ button.primary, a.button.primary {
   @include button($accent-light, $primary, $primary-dark, $primary-darker);
 }
 
+button.accent-1, a.button.accent-1 {
+  @include button($accent-light, $accent-1, $accent-1-dark, $accent-1-darker);
+}
+
+button.accent-2, a.button.accent-2 {
+  @include button($accent-light, $accent-2, $accent-2-dark, $accent-2-darker);
+}
+
+button.dark, a.button.dark {
+  @include button($accent-light, $accent-dark, $accent-dark-light, $accent-dark-lightest);
+}
+
+button.light, a.button.light {
+  @include button($accent-dark, $accent-light-dark, $accent-light-darker, $accent-light-darkest);
+}
+
 button.success, a.button.success {
   @include button($accent-light, $success, $success-dark, $success-darker);
 }
@@ -43,4 +59,28 @@ button.notice, a.button.notice {
 
 button.alert, a.button.alert {
   @include button($accent-light, $danger, $danger-dark, $danger-darker);
+}
+
+// block
+button.block, a.button.block, input[type=submit].block, form > input[type=submit].block {
+  @include button($button-color, $button-background-color, $button-hover-background-color, $button-active-background-color);
+  display: block;
+  width: 100%;
+}
+
+// disabled
+button, input[type=submit], form > input[type=submit] {
+  &:disabled {
+    @include button($accent-dark-lightest, $accent-dark-lighter, $accent-dark-lighter, $accent-dark-lighter);
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+a.button.disabled, .button.disabled {
+  @include button($accent-dark-lightest, $accent-dark-lighter, $accent-dark-lighter, $accent-dark-lighter);
+  &:hover {
+    cursor: default;
+  }
 }
