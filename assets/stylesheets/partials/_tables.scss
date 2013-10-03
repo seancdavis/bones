@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border: 1px solid $accent-light-darker;
+  th, td {
+    padding: 5px 10px;
+  }
+  thead tr {
+    background: $primary;
+    th {
+      color: $accent-light;
+    }
+  }
+
+  tbody tr {
+    &:nth-child(even) {
+      background: $accent-light;
+    }
+    td {
+    }
+  }
+}
