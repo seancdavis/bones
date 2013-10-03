@@ -3,6 +3,10 @@ form {
     @include form-global();
     @include form-input();
   }
+  input[type=email] {
+    @include form-global();
+    @include form-input();
+  }
   input[type=password] {
     @include form-global();
     @include form-input();
@@ -23,9 +27,17 @@ form {
     @include form-global();
     display: inline;
     width: auto;
-    margin: 0 0 0.5em 0;
+    margin: $form-radio-margin;
   }
   label {
     display: block;
+  }
+
+  fieldset {
+    border: $form-fieldset-border;
+    legend {
+      font-weight: $form-fieldset-legend-font-weight;
+      padding: $form-fieldset-legend-padding;
+    }
   }
 }
