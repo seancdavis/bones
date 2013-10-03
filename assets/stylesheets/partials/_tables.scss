@@ -1,21 +1,19 @@
 table {
-  width: 100%;
-  border: 1px solid $accent-light-darker;
+  width: $table-width;
+  border: $table-border;
   th, td {
-    padding: 5px 10px;
+    padding: $table-cell-padding;
   }
   thead tr {
-    background: $primary;
+    background: $table-header-background;
     th {
-      color: $accent-light;
+      color: $table-header-color;
+      font-weight: $table-header-font-weight;
     }
   }
-
   tbody tr {
     &:nth-child(even) {
-      background: $accent-light;
-    }
-    td {
+      background: $table-cell-accent-background;
     }
   }
 }
