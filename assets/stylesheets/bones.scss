@@ -28,6 +28,7 @@ VARIABLES
 @import 'variables/typography';
 @import 'variables/code';
 @import 'variables/buttons';
+@import 'variables/forms';
 
 /*
 --------------------------
@@ -37,6 +38,7 @@ MIXINS
 @import 'mixins/grid';
 @import 'mixins/typography';
 @import 'mixins/buttons';
+@import 'mixins/forms';
 
 /*
 --------------------------
@@ -47,3 +49,4 @@ PARTIALS
 @import 'partials/typography';
 @import 'partials/code';
 @import 'partials/buttons';
+@import 'partials/forms';

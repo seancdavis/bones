@@ -1,0 +1,31 @@
+form {
+  input[type=text] {
+    @include form-global();
+    @include form-input();
+  }
+  input[type=password] {
+    @include form-global();
+    @include form-input();
+  }
+  input[type=search] {
+    @include form-global();
+    @include form-input();
+  }
+  textarea {
+    @include form-global();
+    @include form-input();
+    height: 100px;
+  }
+  select {
+    @include form-global();
+  }
+  input[type=radio], input[type=checkbox] {
+    @include form-global();
+    display: inline;
+    width: auto;
+    margin: 0 0 0.5em 0;
+  }
+  label {
+    display: block;
+  }
+}

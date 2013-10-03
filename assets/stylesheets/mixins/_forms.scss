@@ -1,0 +1,15 @@
+@mixin form-global() {
+  display: block;
+  margin: 0 0 0.75em 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid $accent-light-darker;
+  &:focus {
+    outline: none;
+    border: 1px solid $primary;
+  }
+}
+
+@mixin form-input() {
+  padding: 4px;
+}
