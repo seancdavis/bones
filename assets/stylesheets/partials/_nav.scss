@@ -1,0 +1,20 @@
+nav, nav.horizontal {
+  ul {
+    @include nav-ul-core();
+    li {
+      display: inline-block;
+      a {
+        @include horizontal-list-items();
+        @include horizontal-nav-effects();
+      }
+    }
+  }
+}
+
+ul.horizontal {
+  @include nav-ul-core();
+  li {
+    display: inline-block;
+    @include horizontal-list-items();
+  }
+}
