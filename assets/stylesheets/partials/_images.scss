@@ -1,0 +1,47 @@
+img {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  &.thumb {
+    width: 150px;
+  }
+  &.medium {
+    width: 300px;
+  }
+  &.large {
+    width: 450px;
+  }
+  &.frame {
+    border: 0.5em solid transparent;
+    outline: 1px solid $accent-light-dark;
+  }
+  &.polaroid {
+    border: 0.75em solid transparent;
+    outline: 1px solid $accent-light-dark;
+    border-bottom-width: 2.75em;
+  }
+}
+
+div.panoramic {
+  width: 100%;
+  height: 200px;
+  overflow:hidden;
+  box-sizing: border-box;
+  position: relative;
+  img {
+    width: 100%;
+    position: absolute;
+    top: -40%;
+  }
+}
+
+div.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
