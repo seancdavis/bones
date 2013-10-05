@@ -32,7 +32,9 @@ form {
   label {
     display: block;
   }
-
+  label.inline {
+    display: inline;
+  }
   fieldset {
     border: $form-fieldset-border;
     legend {
