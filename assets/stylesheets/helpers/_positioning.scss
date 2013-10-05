@@ -1,6 +1,24 @@
+// float
 .float-left {
   float: left;
 }
 .float-right {
   float: right;
+}
+
+// text-align
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }

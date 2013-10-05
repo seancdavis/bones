@@ -58,7 +58,6 @@ PARTIALS
 @import 'partials/tables';
 @import 'partials/nav';
 @import 'partials/images';
-@import 'partials/components';
 
 /*
 --------------------------
@@ -69,4 +68,5 @@ HELPERS
 @import 'helpers/positioning';
 @import 'helpers/color';
 @import 'helpers/background';
+@import 'helpers/border';
 @import 'helpers/size';

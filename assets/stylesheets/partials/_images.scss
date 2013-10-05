@@ -20,6 +20,11 @@ img {
     outline: 1px solid $accent-light-dark;
     border-bottom-width: 2.75em;
   }
+  &.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 div.panoramic {
