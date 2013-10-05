@@ -1,20 +1,13 @@
-nav, nav.horizontal {
+nav.top, div.top-nav {
+  width: 100%;
+  background: $primary;
   ul {
-    @include nav-ul-core();
-    li {
-      display: inline-block;
-      a {
-        @include horizontal-list-items();
-        @include horizontal-nav-effects();
-      }
-    }
+    @include horizontal-nav-core($nav-tb-background,$nav-tb-color,$nav-tb-background-hover,$nav-tb-color-hover,$nav-tb-padding,$nav-tb-font-size);
   }
 }
 
-ul.horizontal {
-  @include nav-ul-core();
-  li {
-    display: inline-block;
-    @include horizontal-list-items();
+nav.horizontal, div.horizontal-nav {
+  ul {
+    @include horizontal-nav-core($nav-h-background,$nav-h-color,$nav-h-background-hover,$nav-h-color-hover,$nav-h-padding,$nav-h-font-size);
   }
 }

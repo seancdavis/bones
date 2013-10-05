@@ -1,24 +1,23 @@
-@mixin nav-ul-core() {
+@mixin horizontal-nav-core($bg, $fg, $bg-hover, $fg-hover, $padding, $font-size) {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-@mixin horizontal-list-items() {
-  font-size: 1.1em;
-  padding: 0.5em 1.25em;
-}
-
-@mixin horizontal-nav-effects() {
-  background-color: transparent;
-  color: $primary;
-  //transition: background-color 0.25s linear;
-  //transition: color 0.25s linear;
-  &:hover {
-    text-decoration: none;
-    background: $primary;
-    color: $accent-light;
-    //transition: background-color 0.25s linear;
-    //transition: color 0.25s linear;
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    a {
+      display: inline-block;
+      font-size: $font-size;
+      margin: 0;
+      padding: $padding;
+      background-color: $bg;
+      color: $fg;
+      &:hover {
+        text-decoration: none;
+        background: $bg-hover;
+        color: $fg-hover;
+      }
+    }
   }
 }
