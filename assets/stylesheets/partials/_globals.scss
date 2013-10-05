@@ -4,6 +4,7 @@
   font-weight: $default-font-weight;
   color: $default-color;
   line-height: $default-line-height;
+  box-sizing: border-box;
 }
 
 .container {
@@ -21,4 +22,8 @@ hr {
   background: $hr-color;
   margin: $hr-margin;
   height: $hr-height;
+}
+
+div {
+  box-sizing: border-box;
 }

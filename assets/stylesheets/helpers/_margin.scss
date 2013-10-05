@@ -1,0 +1,82 @@
+// general
+.margin-small {
+  margin: $margin-small;
+}
+.margin-medium {
+  margin: $margin-medium;
+}
+.margin-large {
+  margin: $margin-large;
+}
+
+// vertical
+.margin-v-small {
+  margin-top: $margin-small;
+  margin-bottom: $margin-small;
+}
+.margin-v-medium {
+  margin-top: $margin-medium;
+  margin-bottom: $margin-medium;
+}
+.margin-v-large {
+  margin-top: $margin-large;
+  margin-bottom: $margin-large;
+}
+
+// horizontal
+.margin-h-small {
+  margin-right: $margin-small;
+  margin-left: $margin-small;
+}
+.margin-h-medium {
+  margin-right: $margin-medium;
+  margin-left: $margin-medium;
+}
+.margin-h-large {
+  margin-right: $margin-large;
+  margin-left: $margin-large;
+}
+
+// left
+.margin-left-small {
+  margin-left: $margin-small;
+}
+.margin-left-medium {
+  margin-left: $margin-medium;
+}
+.margin-left-large {
+  margin-left: $margin-large;
+}
+
+// right
+.margin-right-small {
+  margin-right: $margin-small;
+}
+.margin-right-medium {
+  margin-right: $margin-medium;
+}
+.margin-right-large {
+  margin-right: $margin-large;
+}
+
+// top
+.margin-top-small {
+  margin-top: $margin-small;
+}
+.margin-top-medium {
+  margin-top: $margin-medium;
+}
+.margin-top-large {
+  margin-top: $margin-large;
+}
+
+// bottom
+.margin-bottom-small {
+  margin-bottom: $margin-small;
+}
+.margin-bottom-medium {
+  margin-bottom: $margin-medium;
+}
+.margin-bottom-large {
+  margin-bottom: $margin-large;
+}

@@ -1,0 +1,21 @@
+// colored containers
+div.fill {
+  width: 100%;
+  padding: 0.25em;
+  background: $primary;
+  &.accent-1 {
+    background: $accent-1;
+  }
+  &.accent-2 {
+    background: $accent-2;
+  }
+  &.warning {
+    background: $warning;
+  }
+  &.success {
+    background: $success;
+  }
+  &.danger {
+    background: $danger;
+  }
+}

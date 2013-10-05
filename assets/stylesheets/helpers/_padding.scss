@@ -1,0 +1,82 @@
+// general
+.padding-small {
+  padding: $padding-small;
+}
+.padding-medium {
+  padding: $padding-medium;
+}
+.padding-large {
+  padding: $padding-large;
+}
+
+// vertical
+.padding-v-small {
+  padding-top: $padding-small;
+  padding-bottom: $padding-small;
+}
+.padding-v-medium {
+  padding-top: $padding-medium;
+  padding-bottom: $padding-medium;
+}
+.padding-v-large {
+  padding-top: $padding-large;
+  padding-bottom: $padding-large;
+}
+
+// horizontal
+.padding-h-small {
+  padding-right: $padding-small;
+  padding-left: $padding-small;
+}
+.padding-h-medium {
+  padding-right: $padding-medium;
+  padding-left: $padding-medium;
+}
+.padding-h-large {
+  padding-right: $padding-large;
+  padding-left: $padding-large;
+}
+
+// left
+.padding-left-small {
+  padding-left: $padding-small;
+}
+.padding-left-medium {
+  padding-left: $padding-medium;
+}
+.padding-left-large {
+  padding-left: $padding-large;
+}
+
+// right
+.padding-right-small {
+  padding-right: $padding-small;
+}
+.padding-right-medium {
+  padding-right: $padding-medium;
+}
+.padding-right-large {
+  padding-right: $padding-large;
+}
+
+// top
+.padding-top-small {
+  padding-top: $padding-small;
+}
+.padding-top-medium {
+  padding-top: $padding-medium;
+}
+.padding-top-large {
+  padding-top: $padding-large;
+}
+
+// bottom
+.padding-bottom-small {
+  padding-bottom: $padding-small;
+}
+.padding-bottom-medium {
+  padding-bottom: $padding-medium;
+}
+.padding-bottom-large {
+  padding-bottom: $padding-large;
+}
