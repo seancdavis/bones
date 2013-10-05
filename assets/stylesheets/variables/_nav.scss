@@ -21,3 +21,20 @@ $nav-v-background: transparent;
 $nav-v-color: $primary;
 $nav-v-background-hover: $primary;
 $nav-v-color-hover: $accent-light;
+
+// filters
+$nav-f-padding: 0.5em;
+$nav-f-font-size: 0.9em;
+$nav-f-background: transparent;
+$nav-f-color: $primary;
+$nav-f-background-hover: $primary;
+$nav-f-color-hover: $accent-light;
+
+// breadcrumbs
+$nav-b-padding: 0.5em;
+$nav-b-font-size: 0.9em;
+$nav-b-background: transparent;
+$nav-b-color: $primary-light;
+$nav-b-background-hover: transparent;
+$nav-b-color-hover: $primary;
+$nav-b-separator: " \002F ";

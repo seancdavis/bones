@@ -2,13 +2,27 @@ nav.top, div.top-nav {
   width: 100%;
   background: $primary;
   ul {
-    @include horizontal-nav-core($nav-tb-background,$nav-tb-color,$nav-tb-background-hover,$nav-tb-color-hover,$nav-tb-padding,$nav-tb-font-size);
+    @include horizontal-nav-core(
+      $nav-tb-background,
+      $nav-tb-color,
+      $nav-tb-background-hover,
+      $nav-tb-color-hover,
+      $nav-tb-padding,
+      $nav-tb-font-size
+    );
   }
 }
 
 nav.horizontal, div.horizontal-nav {
   ul {
-    @include horizontal-nav-core($nav-h-background,$nav-h-color,$nav-h-background-hover,$nav-h-color-hover,$nav-h-padding,$nav-h-font-size);
+    @include horizontal-nav-core(
+      $nav-h-background,
+      $nav-h-color,
+      $nav-h-background-hover,
+      $nav-h-color-hover,
+      $nav-h-padding,
+      $nav-h-font-size
+    );
   }
 }
 
@@ -28,6 +42,37 @@ nav.vertical, nav {
           color: $nav-v-color-hover;
         }
       }
+    }
+  }
+}
+
+ul.filter {
+  @include horizontal-nav-core(
+    $nav-f-background,
+    $nav-f-color,
+    $nav-f-background-hover,
+    $nav-f-color-hover,
+    $nav-f-padding,
+    $nav-f-font-size
+  );
+}
+
+ul.breadcrumb {
+  @include horizontal-nav-core(
+    $nav-b-background,
+    $nav-b-color,
+    $nav-b-background-hover,
+    $nav-b-color-hover,
+    $nav-b-padding,
+    $nav-b-font-size
+  );
+  li {
+    &:after {
+      content: $nav-b-separator;
+      color: $accent-light-darker;
+    }
+    &:last-child:after {
+      content: "";
     }
   }
 }

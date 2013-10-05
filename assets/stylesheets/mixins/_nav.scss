@@ -4,12 +4,18 @@
   padding: 0;
 }
 
-@mixin horizontal-nav-core($bg, $fg, $bg-hover, $fg-hover, $padding, $font-size) {
+@mixin horizontal-list-core() {
   @include nav-core();
   li {
     display: inline-block;
     margin: 0;
     padding: 0;
+  }
+}
+
+@mixin horizontal-nav-core($bg, $fg, $bg-hover, $fg-hover, $padding, $font-size) {
+  @include horizontal-list-core;
+  li {
     a {
       display: inline-block;
       font-size: $font-size;
