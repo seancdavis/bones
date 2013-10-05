@@ -12,3 +12,22 @@ nav.horizontal, div.horizontal-nav {
   }
 }
 
+nav.vertical, nav {
+  ul {
+    @include nav-core();
+    li {
+      a {
+        display: block;
+        padding: $nav-v-padding;
+        font-size: $nav-v-font-size;
+        background: $nav-v-background;
+        color: $nav-v-color;
+        &:hover {
+          text-decoration: none;
+          background: $nav-v-background-hover;
+          color: $nav-v-color-hover;
+        }
+      }
+    }
+  }
+}
