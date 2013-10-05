@@ -1,21 +1,22 @@
-// colored containers
-div.fill {
+@mixin notification($bg) {
+  background: $bg;
+  padding: 0.5em 1em;
   width: 100%;
-  padding: 0.25em;
-  background: $primary;
-  &.accent-1 {
-    background: $accent-1;
-  }
-  &.accent-2 {
-    background: $accent-2;
-  }
-  &.warning {
-    background: $warning;
-  }
-  &.success {
-    background: $success;
-  }
-  &.danger {
-    background: $danger;
-  }
+  color: $accent-light;
+}
+
+.alert {
+  @include notification($danger);
+}
+.notice {
+  @include notification($primary);
+}
+.danger {
+  @include notification($danger);
+}
+.warning {
+  @include notification($warning);
+}
+.success {
+  @include notification($success);
 }
