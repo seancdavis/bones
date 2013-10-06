@@ -45,6 +45,15 @@ nav.vertical, nav {
           text-decoration: none;
           background: $nav-v-background-hover;
           color: $nav-v-color-hover;
+          span, i {
+            background: $nav-v-background-hover;
+            color: $nav-v-color-hover;
+          }
+        }
+        span, i {
+          margin-right: 10px;
+          background: $nav-v-background;
+          color: $nav-v-color;
         }
       }
     }
