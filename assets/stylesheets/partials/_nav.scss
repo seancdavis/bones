@@ -1,6 +1,7 @@
 nav.top, div.top-nav {
   width: 100%;
   background: $primary;
+  overflow: hidden;
   ul {
     @include horizontal-nav-core(
       $nav-tb-background,
@@ -10,6 +11,10 @@ nav.top, div.top-nav {
       $nav-tb-padding,
       $nav-tb-font-size
     );
+    float: left;
+    &.right {
+      float: right;
+    }
   }
 }
 

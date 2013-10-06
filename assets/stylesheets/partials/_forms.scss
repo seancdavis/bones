@@ -35,6 +35,10 @@ form {
   label.inline {
     display: inline;
   }
+  label.boolean {
+    display: inline;
+    margin-left: 5px;
+  }
   fieldset {
     border: $form-fieldset-border;
     legend {

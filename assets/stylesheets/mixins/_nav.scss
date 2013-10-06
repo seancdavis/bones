@@ -28,6 +28,14 @@
         background: $bg-hover;
         color: $fg-hover;
       }
+      span, i {
+        background-color: $bg;
+        color: $fg;
+        &:hover {
+          background: $bg-hover;
+          color: $fg-hover;
+        }
+      }
     }
   }
 }
