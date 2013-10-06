@@ -38,8 +38,8 @@ $blockquote-font-size: $default-font-size;
 // links
 $link-color: $primary;
 $link-underline: false;
-$link-hover-color: $primary;
-$link-hover-underline: true;
+$link-hover-color: $primary-darker;
+$link-hover-underline: false;
 
 // individual characters
 $small-font-factor: 60%;
