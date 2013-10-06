@@ -2,8 +2,8 @@
 $nav-tb-padding: 0.5em 1.25em;
 $nav-tb-font-size: 1.1em;
 $nav-tb-background: transparent;
-$nav-tb-color: $accent-light;
-$nav-tb-background-hover: $accent-1;
+$nav-tb-color: $primary-light;
+$nav-tb-background-hover: transparent;
 $nav-tb-color-hover: $accent-light;
 
 // horizontal
@@ -18,9 +18,9 @@ $nav-h-color-hover: $accent-light;
 $nav-v-padding: 0.5em;
 $nav-v-font-size: 1em;
 $nav-v-background: transparent;
-$nav-v-color: $primary;
-$nav-v-background-hover: $primary;
-$nav-v-color-hover: $accent-light;
+$nav-v-color: $accent-light-darkest;
+$nav-v-background-hover: transparent;
+$nav-v-color-hover: $primary;
 
 // filters
 $nav-f-padding: 0.5em;
