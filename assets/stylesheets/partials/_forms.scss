@@ -18,7 +18,7 @@ form {
   textarea {
     @include form-global();
     @include form-input();
-    height: 100px;
+    height: 350px;
   }
   select {
     @include form-global();
