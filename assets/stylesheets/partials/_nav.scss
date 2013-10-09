@@ -16,6 +16,25 @@ nav.top, div.top-nav {
       float: right;
     }
   }
+  &.secondary {
+    background: $primary-light;
+    ul > li {
+      a {
+        color: $primary;
+        i, span {
+          color: $primary;
+        }
+        &:hover, &.active {
+          background: $primary;
+          color: $accent-light;
+          i, span {
+            background: $primary;
+            color: $accent-light;
+          }
+        }
+      }
+    }
+  }
 }
 
 nav.horizontal, div.horizontal-nav {
