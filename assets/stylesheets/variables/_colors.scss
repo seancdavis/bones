@@ -20,6 +20,14 @@ $color-factor-1: 5%;
 $color-factor-2: 15%;
 $color-factor-3: 25%;
 
+/*
+ * These tone calculations are performed automatically.
+ * They provide you with a light, lighter, lightest, 
+ * dark, darker, darkest variations of your palette.
+ *
+ * You don't need to change anything below, but can
+ * if you'd like, or you can add new variations.
+ */
 $primary-light:     lighten($primary, $color-factor-1);
 $primary-lighter:   lighten($primary, $color-factor-2);
 $primary-lightest:  lighten($primary, $color-factor-3);
