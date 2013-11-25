@@ -1,13 +1,13 @@
 /* Default Styles
 ============================ */
 // font
-$button-color: $accent-light; // default font color
-$button-font-size: $default-font-size; // default font size
+$btn-color: $accent-light; // default font color
+$btn-font-size: $default-font-size; // default font size
 
 // background
-$button-background-color: $accent-dark-lighter; // default button bg
-$button-hover-background-color: $primary; // default button bg on hover
-$button-active-background-color: $primary-dark; // bg on click
+$btn-background-color: $accent-dark-lighter; // default button bg
+$btn-hover-background-color: $primary; // default button bg on hover
+$btn-active-background-color: $primary-dark; // bg on click
 
 // layout / other
 /*
@@ -15,12 +15,12 @@ $button-active-background-color: $primary-dark; // bg on click
  * with css. for example, you could use
  * 1px solid #FFF for border. 
  */
-$button-padding: 0.65em 1em; // padding
-$button-margin: $default-margin; // margin
-$button-border: none; // border
+$btn-padding: 0.65em 1em; // padding
+$btn-margin: $default-margin; // margin
+$btn-border: none; // border
 
 /* Size Factors
 ============================ */
-$button-huge-font-size:   200%; // huge
-$button-large-font-size:  150%; // large
-$button-small-font-size:  75%;  // small
+$btn-huge-font-size:   200%; // huge
+$btn-large-font-size:  150%; // large
+$btn-small-font-size:  75%;  // small

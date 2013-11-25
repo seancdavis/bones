@@ -2,11 +2,11 @@
   color: $color;
   background-color: $background-color;
   display: inline-block;
-  border: $button-border;
-  padding: $button-padding;
-  margin: $button-margin;
-  font-size: $button-font-size;
-  line-height: $button-font-size;
+  border: $btn-border;
+  padding: $btn-padding;
+  margin: $btn-margin;
+  font-size: $btn-font-size;
+  line-height: $btn-font-size;
   &:hover {
     background-color: $hover-background-color;
     cursor: pointer;
