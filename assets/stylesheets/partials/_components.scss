@@ -5,18 +5,20 @@
   color: $accent-light;
 }
 
-.alert {
-  @include notification($danger);
-}
-.notice {
-  @include notification($primary);
-}
-.danger {
-  @include notification($danger);
-}
-.warning {
-  @include notification($warning);
-}
-.success {
-  @include notification($success);
+p, div {
+  &.alert {
+    @include notification($danger);
+  }
+  &.notice {
+    @include notification($primary);
+  }
+  &.danger {
+    @include notification($danger);
+  }
+  &.warning {
+    @include notification($warning);
+  }
+  &.success {
+    @include notification($success);
+  }
 }
