@@ -41,6 +41,14 @@ button.accent-2, a.button.accent-2 {
   @include button($accent-light, $accent-2, $accent-2-dark, $accent-2-darker);
 }
 
+button.accent-3, a.button.accent-3 {
+  @include button($accent-light, $accent-3, $accent-3-dark, $accent-3-darker);
+}
+
+button.accent-4, a.button.accent-4 {
+  @include button($accent-light, $accent-4, $accent-4-dark, $accent-4-darker);
+}
+
 button.dark, a.button.dark {
   @include button($accent-light, $accent-dark, $accent-dark-light, $accent-dark-lightest);
 }

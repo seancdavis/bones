@@ -1,16 +1,16 @@
 // colors
-$button-color: $accent-light;
-$button-background-color: $primary;
-$button-hover-background-color: $primary-dark;
-$button-active-background-color: $primary-darker;
+$button-color: $accent-light; // default font color
+$button-background-color: $accent-dark-lighter; // default button bg
+$button-hover-background-color: $primary; // default button bg on hover
+$button-active-background-color: $primary-dark; // bg on click
 
-// default styles
-$button-border: none;
-$button-padding: 0.65em 1em;
-$button-margin: $default-margin;
-$button-font-size: $default-font-size;
+// other styles
+$button-border: none; // default border
+$button-padding: 0.65em 1em; // default padding
+$button-margin: $default-margin; // default margin
+$button-font-size: $default-font-size; // default font size
 
-// size
-$button-huge-font-size: 200%;
-$button-large-font-size: 150%;
-$button-small-font-size: 75%;
+// size factors
+$button-huge-font-size:   200%; // huge
+$button-large-font-size:  150%; // large
+$button-small-font-size:  75%;  // small
