@@ -1,6 +1,6 @@
 /* Color Palette
 ============================ */
-$primary:       #1B8FB8;
+$primary:       #1B8FB8; // used most often by default
 $accent-1:      #D65030;
 $accent-2:      #D48D2B;
 $accent-3:      #1F7D24;
@@ -13,14 +13,13 @@ $warning:       #CCA300;
 $danger:        #CC0000;
 $success:       #008A2E;
 
-// groups
-
+/* Tones
+============================ */
 // color factors -- to increase tone
 $color-factor-1: 5%;
 $color-factor-2: 15%;
 $color-factor-3: 25%;
 
-// tones
 $primary-light:     lighten($primary, $color-factor-1);
 $primary-lighter:   lighten($primary, $color-factor-2);
 $primary-lightest:  lighten($primary, $color-factor-3);
