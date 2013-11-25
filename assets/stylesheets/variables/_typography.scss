@@ -1,6 +1,6 @@
 // apply to all headings
 $heading-margin: $default-margin;
-$heading-color: $font;
+$heading-color: $default-color;
 $heading-caps: false;
 $heading-font-weight: 600;
 
@@ -26,7 +26,7 @@ $paragraph-font: $default-font-size;
 $paragraph-font-weight: $default-font-weight;
 $paragraph-margin: $default-margin;
 $paragraph-line-height: $default-line-height;
-$paragraph-color: $font;
+$paragraph-color: $default-color;
 
 // blockquotes
 $blockquote-padding: 0.25em 0.75em;

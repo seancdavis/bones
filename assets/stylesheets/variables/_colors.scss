@@ -1,122 +1,86 @@
-// palette
-$primary: #1D9BC7; // blue
-$accent-1: #E05432; // red/orange
-$accent-2: #168719; // green
-$accent-dark: #444444; // dark
-$accent-light: #efefef; // light
+/* Color Palette
+============================ */
+$primary:       #1B8FB8;
+$accent-1:      #D65030;
+$accent-2:      #D48D2B;
+$accent-3:      #1F7D24;
+$accent-4:      #BDAD1B;
+$accent-dark:   #444444; // designed to be a dark color
+$accent-light:  #efefef; // designed to be a light color
 
-$warning: #CCA300;
-$danger: #CC0000;
-$success: #008A2E;
-
-// tones
-$primary-light:     #6BCEF0;
-$primary-lighter:   #AEE4F5;
-$primary-lightest:  lighten(#AEE4F5, 5%);
-$primary-dark:      darken($primary, 5%);
-$primary-darker:    darken($primary, 15%);
-$primary-darkest:   darken($primary, 25%);
-
-$accent-1-light:     lighten($accent-1, 5%);
-$accent-1-lighter:   lighten($accent-1, 15%);
-$accent-1-lightest:  lighten($accent-1, 25%);
-$accent-1-dark:      darken($accent-1, 5%);
-$accent-1-darker:    darken($accent-1, 15%);
-$accent-1-darkest:   darken($accent-1, 25%);
-
-$accent-2-light:     lighten($accent-2, 5%);
-$accent-2-lighter:   lighten($accent-2, 15%);
-$accent-2-lightest:  lighten($accent-2, 25%);
-$accent-2-dark:      darken($accent-2, 5%);
-$accent-2-darker:    darken($accent-2, 15%);
-$accent-2-darkest:   darken($accent-2, 25%);
-
-$accent-dark-light:     lighten($accent-dark, 5%);
-$accent-dark-lighter:   lighten($accent-dark, 15%);
-$accent-dark-lightest:  lighten($accent-dark, 25%);
-
-$accent-light-dark:      darken($accent-light, 5%);
-$accent-light-darker:    darken($accent-light, 15%);
-$accent-light-darkest:   darken($accent-light, 25%);
-
-$success-dark:      darken($success, 5%);
-$success-darker:    darken($success, 15%);
-$success-darkest:   darken($success, 25%);
-
-$warning-dark:      darken($warning, 5%);
-$warning-darker:    darken($warning, 15%);
-$warning-darkest:   darken($warning, 25%);
-
-$danger-dark:      darken($danger, 5%);
-$danger-darker:    darken($danger, 15%);
-$danger-darkest:   darken($danger, 25%);
+// used primarily for notifications:
+$warning:       #CCA300;
+$danger:        #CC0000;
+$success:       #008A2E;
 
 // groups
-$font: $accent-dark;
-$code: $accent-1;
-$shadow: $accent-light;
 
-// syntax highlighting
-.hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
-.c { color: #999988; font-style: italic; }
-.err { color: #a61717; background-color: #e3d2d2; }
-.k { font-weight: bold; }
-.o { font-weight: bold; }
-.cm { color: #999988; font-style: italic; }
-.cp { color: #999999; font-weight: bold; }
-.c1 { color: #999988; font-style: italic; }
-.cs { color: #999999; font-weight: bold; font-style: italic; }
-.gd { color: #000000; background-color: #ffdddd; }
-.gd .x { color: #000000; background-color: #ffaaaa; }
-.ge { font-style: italic; }
-.gr { color: #aa0000; }
-.gh { color: #999999; }
-.gi { color: #000000; background-color: #ddffdd; }
-.gi .x { color: #000000; background-color: #aaffaa; }
-.go { color: #888888; }
-.gp { color: #555555; }
-.gs { font-weight: bold; }
-.gu { color: #800080; font-weight: bold; }
-.gt { color: #aa0000; }
-.kc { font-weight: bold; }
-.kd { font-weight: bold; }
-.kn { font-weight: bold; }
-.kp { font-weight: bold; }
-.kr { font-weight: bold; }
-.kt { color: #445588; font-weight: bold; }
-.m { color: #009999; }
-.s { color: #dd1144; }
-.n { color: #333333; }
-.na { color: teal; }
-.nb { color: #0086b3; }
-.nc { color: #445588; font-weight: bold; }
-.no { color: teal; }
-.ni { color: purple; }
-.ne { color: #990000; font-weight: bold; }
-.nf { color: #990000; font-weight: bold; }
-.nn { color: #555555; }
-.nt { color: navy; }
-.nv { color: teal; }
-.ow { font-weight: bold; }
-.w { color: #bbbbbb; }
-.mf { color: #009999; }
-.mh { color: #009999; }
-.mi { color: #009999; }
-.mo { color: #009999; }
-.sb { color: #dd1144; }
-.sc { color: #dd1144; }
-.sd { color: #dd1144; }
-.s2 { color: #dd1144; }
-.se { color: #dd1144; }
-.sh { color: #dd1144; }
-.si { color: #dd1144; }
-.sx { color: #dd1144; }
-.sr { color: #009926; }
-.s1 { color: #dd1144; }
-.ss { color: #990073; }
-.bp { color: #999999; }
-.vc { color: teal; }
-.vg { color: teal; }
-.vi { color: teal; }
-.il { color: #009999; }
-.gc { color: #999; background-color: #EAF2F5; }
+// color factors -- to increase tone
+$color-factor-1: 5%;
+$color-factor-2: 15%;
+$color-factor-3: 25%;
+
+// tones
+$primary-light:     lighten($primary, $color-factor-1);
+$primary-lighter:   lighten($primary, $color-factor-2);
+$primary-lightest:  lighten($primary, $color-factor-3);
+$primary-dark:      darken($primary, $color-factor-1);
+$primary-darker:    darken($primary, $color-factor-2);
+$primary-darkest:   darken($primary, $color-factor-3);
+
+$accent-1-light:     lighten($accent-1, $color-factor-1);
+$accent-1-lighter:   lighten($accent-1, $color-factor-2);
+$accent-1-lightest:  lighten($accent-1, $color-factor-3);
+$accent-1-dark:      darken($accent-1, $color-factor-1);
+$accent-1-darker:    darken($accent-1, $color-factor-2);
+$accent-1-darkest:   darken($accent-1, $color-factor-3);
+
+$accent-2-light:     lighten($accent-2, $color-factor-1);
+$accent-2-lighter:   lighten($accent-2, $color-factor-2);
+$accent-2-lightest:  lighten($accent-2, $color-factor-3);
+$accent-2-dark:      darken($accent-2, $color-factor-1);
+$accent-2-darker:    darken($accent-2, $color-factor-2);
+$accent-2-darkest:   darken($accent-2, $color-factor-3);
+
+$accent-3-light:     lighten($accent-3, $color-factor-1);
+$accent-3-lighter:   lighten($accent-3, $color-factor-2);
+$accent-3-lightest:  lighten($accent-3, $color-factor-3);
+$accent-3-dark:      darken($accent-3, $color-factor-1);
+$accent-3-darker:    darken($accent-3, $color-factor-2);
+$accent-3-darkest:   darken($accent-3, $color-factor-3);
+
+$accent-4-light:     lighten($accent-4, $color-factor-1);
+$accent-4-lighter:   lighten($accent-4, $color-factor-2);
+$accent-4-lightest:  lighten($accent-4, $color-factor-3);
+$accent-4-dark:      darken($accent-4, $color-factor-1);
+$accent-4-darker:    darken($accent-4, $color-factor-2);
+$accent-4-darkest:   darken($accent-4, $color-factor-3);
+
+$accent-dark-light:     lighten($accent-dark, $color-factor-1);
+$accent-dark-lighter:   lighten($accent-dark, $color-factor-2);
+$accent-dark-lightest:  lighten($accent-dark, $color-factor-3);
+
+$accent-light-dark:      darken($accent-light, $color-factor-1);
+$accent-light-darker:    darken($accent-light, $color-factor-2);
+$accent-light-darkest:   darken($accent-light, $color-factor-3);
+
+$success-light:     lighten($success, $color-factor-1);
+$success-lighter:   lighten($success, $color-factor-2);
+$success-lightest:  lighten($success, $color-factor-3);
+$success-dark:      darken($success, $color-factor-1);
+$success-darker:    darken($success, $color-factor-2);
+$success-darkest:   darken($success, $color-factor-3);
+
+$warning-light:     lighten($warning, $color-factor-1);
+$warning-lighter:   lighten($warning, $color-factor-2);
+$warning-lightest:  lighten($warning, $color-factor-3);
+$warning-dark:      darken($warning, $color-factor-1);
+$warning-darker:    darken($warning, $color-factor-2);
+$warning-darkest:   darken($warning, $color-factor-3);
+
+$danger-light:     lighten($danger, $color-factor-1);
+$danger-lighter:   lighten($danger, $color-factor-2);
+$danger-lightest:  lighten($danger, $color-factor-3);
+$danger-dark:      darken($danger, $color-factor-1);
+$danger-darker:    darken($danger, $color-factor-2);
+$danger-darkest:   darken($danger, $color-factor-3);

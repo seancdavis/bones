@@ -22,6 +22,8 @@
   <a class="button primary">Primary</a>
   <a class="button accent-1">Accent 1</a>
   <a class="button accent-2">Accent 2</a>
+  <a class="button accent-3">Accent 3</a>
+  <a class="button accent-4">Accent 4</a>
   <a class="button dark">Dark</a>
   <a class="button light">Light</a>
   <a class="button success">Success</a>
