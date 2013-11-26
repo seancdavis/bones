@@ -1,4 +1,0 @@
-@mixin column-width($cols) {
-  $col-width: percentage( (100 / $grid-cols) / 100 );
-  width: ($col-width * $cols) - (2 * $grid-col-margin) - (2 * $grid-col-padding);
-}

@@ -1,3 +1,18 @@
+@mixin heading($size) {
+  font-size: $size;
+}
+
+@mixin subheading($size) {
+  font-size: $size * $subheading-size-factor;
+}
+
+@mixin unordered-list($type) {
+  list-style-type: $type;
+  ul, ul ul {
+    list-style-type: $type;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: $heading-margin;
   color: $heading-color;
