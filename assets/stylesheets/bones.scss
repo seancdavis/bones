@@ -15,47 +15,51 @@ docs on using files coming ...
 --------------------------
 VENDOR ASSETS
 -------------------------- */
-@import 'vendor/normalize'; // normalizes for cross-browser consistency
+@import 
+  'vendor/normalize'; // normalizes for cross-browser consistency
 
 /*
 --------------------------
 VARIABLES
 -------------------------- */
-@import 'variables/colors';
-@import 'variables/globals';
-@import 'variables/grid';
-@import 'variables/typography';
-@import 'variables/code';
-@import 'variables/buttons';
-@import 'variables/forms';
-@import 'variables/tables';
-@import 'variables/nav';
-@import 'variables/images';
-@import 'variables/helpers';
+@import 
+  'variables/colors',
+  'variables/globals',
+  'variables/grid',
+  'variables/typography',
+  'variables/code',
+  'variables/buttons',
+  'variables/forms',
+  'variables/tables',
+  'variables/nav',
+  'variables/images',
+  'variables/helpers';
 
 /*
 --------------------------
 PARTIALS
 -------------------------- */
-@import 'partials/globals';
-@import 'partials/grid';
-@import 'partials/typography';
-@import 'partials/code';
-@import 'partials/buttons';
-@import 'partials/forms';
-@import 'partials/tables';
-@import 'partials/nav';
-@import 'partials/images';
-@import 'partials/components';
+@import 
+  'partials/globals',
+  'partials/grid',
+  'partials/typography',
+  'partials/code',
+  'partials/buttons',
+  'partials/forms',
+  'partials/tables',
+  'partials/nav',
+  'partials/images',
+  'partials/components';
 
 /*
 --------------------------
 HELPERS
 -------------------------- */
-@import 'helpers/margin';
-@import 'helpers/padding';
-@import 'helpers/positioning';
-@import 'helpers/color';
-@import 'helpers/background';
-@import 'helpers/border';
-@import 'helpers/size';
+@import 
+  'helpers/margin',
+  'helpers/padding',
+  'helpers/positioning',
+  'helpers/color',
+  'helpers/background',
+  'helpers/border',
+  'helpers/size';
