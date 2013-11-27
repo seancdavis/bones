@@ -22,15 +22,6 @@
   line-height: $default-line-height;
 }
 
-.container {
-  max-width: $container-width;
-  margin: auto;
-  padding: $container-padding;
-  @include clearfix;
-  clear: both;
-  display: block;
-}
-
 hr {
   border: none;
   background: $hr-color;

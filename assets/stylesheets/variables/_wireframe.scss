@@ -1,0 +1,17 @@
+/* Container
+============================ */
+// container
+$container-width: 1200px; // maximum container width -- container will shrink as needed
+$container-margin: 0 auto;
+$container-padding: 20px;
+// content
+$content-margin: $container-margin;
+$content-padding: $container-padding;
+
+/* Grid
+============================ */
+$grid-cols: 12; // number of columns as base of building grid -- any number is permitted
+$grid-col-margin: 0.5%; // margin on each column -- must be one percentage
+$grid-col-padding: 0.5%; // padding on each column -- must be one percentage
+$grid-col-margin-top-bottom: 0.5%; // top/bottom margin on each column
+$grid-col-padding-top-bottom: 0.5%; // top/bottom padding on each column

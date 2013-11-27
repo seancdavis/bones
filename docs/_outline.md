@@ -1,8 +1,8 @@
 # Structure
 
-* layout
-    * containers
-    * grid
+√ layout
+    √ containers
+    √ grid
 * navigation
     * top bar
     * horizontal nav

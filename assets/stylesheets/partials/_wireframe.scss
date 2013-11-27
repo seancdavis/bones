@@ -1,0 +1,51 @@
+/* Containers
+============================ */
+html, body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@mixin container() {
+  clear: both;
+  display: block;
+}
+
+.container {
+  max-width: $container-width;
+  margin: $container-margin;
+  padding: $container-padding;
+  @include container;
+}
+
+.content {
+  width: 100%;
+  @include container;
+}
+
+/* Grid
+============================ */
+.row {
+  @include clearfix;
+  width: 100%;
+  position: relative;
+}
+
+/*
+ * This loop enables us to adjust to any value as the base
+ * number of columns.
+ *
+ */
+@for $i from 1 through $grid-cols {
+  .column-#{$i} {
+    $col-width: percentage( (100 / $grid-cols) / 100 );
+    width: ($col-width * $i) - (2 * $grid-col-margin);
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin: $grid-col-margin-top-bottom $grid-col-margin;
+    padding: $grid-col-padding-top-bottom $grid-col-padding;
+  }
+}
