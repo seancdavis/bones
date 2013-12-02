@@ -13,11 +13,11 @@ img {
   }
   &.frame {
     border: 0.5em solid transparent;
-    outline: 1px solid $accent-light-dark;
+    outline: 1px solid $color-light-dark;
   }
   &.polaroid {
     border: 0.75em solid transparent;
-    outline: 1px solid $accent-light-dark;
+    outline: 1px solid $color-light-dark;
     border-bottom-width: 2.75em;
   }
   &.center {

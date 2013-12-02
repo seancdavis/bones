@@ -1,13 +1,13 @@
 /* Default Styles
 ============================ */
 // font
-$btn-color: $accent-light; // default font color
+$btn-color: $color-light; // default font color
 $btn-font-size: $default-font-size; // default font size
 
 // background
-$btn-background-color: $accent-dark-lightest; // default button bg
-$btn-hover-background-color: $primary; // default button bg on hover
-$btn-active-background-color: $primary-dark; // bg on click
+$btn-background-color: $color-dark-lightest; // default button bg
+$btn-hover-background-color: $color-1; // default button bg on hover
+$btn-active-background-color: $color-1-dark; // bg on click
 
 // layout / other
 /*

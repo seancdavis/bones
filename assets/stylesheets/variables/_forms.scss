@@ -3,14 +3,14 @@
 $form-margin: $default-margin;
 $form-width: 100%;
 $form-box-sizing: border-box;
-$form-border: 1px solid $accent-light-darker;
+$form-border: 1px solid $color-light-darker;
 $form-focus-outline: none;
-$form-focus-border: 1px solid $primary;
+$form-focus-border: 1px solid $color-1;
 $form-input-padding: 4px;
 $form-radio-margin: 0 0 0.5em 0;
 
 /* Fieldsets
 ============================ */
-$form-fieldset-border: 1px solid $accent-light-darker;
+$form-fieldset-border: 1px solid $color-light-darker;
 $form-fieldset-legend-font-weight: 600;
 $form-fieldset-legend-padding: 0 5px;

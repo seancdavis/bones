@@ -2,7 +2,7 @@
   background: $bg;
   padding: 0.5em 1em;
   width: 100%;
-  color: $accent-light;
+  color: $color-light;
 }
 
 p, div {
@@ -10,7 +10,7 @@ p, div {
     @include notification($danger);
   }
   &.notice {
-    @include notification($primary);
+    @include notification($color-1);
   }
   &.danger {
     @include notification($danger);

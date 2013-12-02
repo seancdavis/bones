@@ -9,17 +9,16 @@
     √ vertical nav / sidebar
     √ filters
     √ breadcrumbs
-* typography
-    * headings
-    * subheadings
-    * small subheadings
-    * paragraphs
-    * blockquotes
-    * unordered lists
-    * ordered lists
-* code
-    * code
-    * code blocks
+√ typography
+    √ headings
+    √ subheadings
+    √ small subheadings
+    √ paragraphs
+    √ blockquotes
+    √ unordered lists
+    √ ordered lists
+    √ code
+    √ code blocks
     * syntax highlighting
 * buttons
     * markup

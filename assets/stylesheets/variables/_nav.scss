@@ -8,31 +8,31 @@ $nav-margin: 0 1.25em;
 $nav-font-size: 1.1em;
 // effects
 $nav-background: transparent;
-$nav-color: $accent-light-darkest;
+$nav-color: $color-light-darkest;
 $nav-transition: all 0.35s linear; // keep set to "all" if you want all styles/effects to transition
 $nav-underline: 2px solid transparent; // stylish substitute for underline -- a "border-bottom" style, NOT "text-decoration"
 // hover state
 $nav-hover-background: transparent;
-$nav-hover-color: $primary;
+$nav-hover-color: $color-1;
 $nav-hover-transition: $nav-transition;
-$nav-hover-underline: 2px solid $primary;
+$nav-hover-underline: 2px solid $color-1;
 
 
 /* Navbar
 ============================ */
 // container
-$navbar-container-background: $primary;
+$navbar-container-background: $color-1;
 // basic styles
 $navbar-padding: 0.35em 1.25em;
 $navbar-margin: 0;
 $navbar-font-size: 1.1em;
 // effects
 $navbar-background: transparent;
-$navbar-color: $accent-light-dark;
+$navbar-color: $color-light-dark;
 $navbar-transition: all 0.35s linear;
 $navbar-underline: none;
 // hover state
-$navbar-hover-background: $primary-lighter;
+$navbar-hover-background: $color-1-lighter;
 $navbar-hover-color: $navbar-color;
 $navbar-hover-transition: $navbar-transition;
 $navbar-hover-underline: none;
@@ -48,12 +48,12 @@ $nav-vertical-margin: 0;
 $nav-vertical-font-size: 1.1em;
 // effects
 $nav-vertical-background: transparent;
-$nav-vertical-color: $accent-light-darker;
+$nav-vertical-color: $color-light-darker;
 $nav-vertical-transition: all 0.35s linear;
 $nav-vertical-underline: none;
 // hover state
 $nav-vertical-hover-background: transparent;
-$nav-vertical-hover-color: $primary;
+$nav-vertical-hover-color: $color-1;
 $nav-vertical-hover-transition: $nav-vertical-transition;
 $nav-vertical-hover-underline: none;
 
@@ -68,22 +68,22 @@ $nav-filter-margin: 0 0.5em;
 $nav-filter-font-size: 0.9em;
 // effects
 $nav-filter-background: transparent;
-$nav-filter-color: $primary;
+$nav-filter-color: $color-1;
 $nav-filter-transition: all 0.35s linear;
 $nav-filter-underline: none;
 // hover state
-$nav-filter-hover-background: $primary;
-$nav-filter-hover-color: $accent-light;
+$nav-filter-hover-background: $color-1;
+$nav-filter-hover-color: $color-light;
 $nav-filter-hover-transition: $nav-filter-transition;
 $nav-filter-hover-underline: none;
 // active state
 $nav-filter-active-font-weight: 600;
 $nav-filter-active-background: transparent;
-$nav-filter-active-color: $primary;
+$nav-filter-active-color: $color-1;
 $nav-filter-active-underline: none;
 // disabled state
 $nav-filter-disabled-background: transparent;
-$nav-filter-disabled-color: $accent-light-dark;
+$nav-filter-disabled-color: $color-light-dark;
 $nav-filter-disabled-underline: none;
 
 
@@ -98,20 +98,20 @@ $nav-breadcrumbs-font-size: 0.9em;
 $nav-breadcrumbs-separator: " \002F ";
 // effects
 $nav-breadcrumbs-background: transparent;
-$nav-breadcrumbs-color: $accent-light-darkest;
+$nav-breadcrumbs-color: $color-light-darkest;
 $nav-breadcrumbs-transition: all 0.35s linear;
 $nav-breadcrumbs-underline: none;
 // hover state
 $nav-breadcrumbs-hover-background: transparent;
-$nav-breadcrumbs-hover-color: $primary;
+$nav-breadcrumbs-hover-color: $color-1;
 $nav-breadcrumbs-hover-transition: $nav-breadcrumbs-transition;
 $nav-breadcrumbs-hover-underline: none;
 // active state
 $nav-breadcrumbs-active-font-weight: 600;
 $nav-breadcrumbs-active-background: transparent;
-$nav-breadcrumbs-active-color: $primary;
+$nav-breadcrumbs-active-color: $color-1;
 $nav-breadcrumbs-active-underline: none;
 // disabled state
 $nav-breadcrumbs-disabled-background: transparent;
-$nav-breadcrumbs-disabled-color: $accent-light-dark;
+$nav-breadcrumbs-disabled-color: $color-light-dark;
 $nav-breadcrumbs-disabled-underline: none;

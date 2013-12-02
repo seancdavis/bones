@@ -1,11 +1,11 @@
 /* Inline Code
 ============================ */
 $code-font-family: Consolas, monospace;
-$code-color: $accent-1;
+$code-color: $color-2;
 $code-font-size: 12px;
-$code-background: $accent-light;
+$code-background: $color-light;
 $code-padding: 1px 2px;
-$code-border: $accent-light-dark;
+$code-border: $color-light-dark;
 
 
 /* Code Blocks
@@ -14,7 +14,7 @@ $code-block-margin: 1.25em 0;
 $code-block-padding: 1.25em 0.75em;
 $code-block-font-family: $code-font-family;
 $code-block-color: $default-color;
-$code-block-background: $accent-light;
-$code-block-border: $accent-light-dark;
+$code-block-background: $color-light;
+$code-block-border: $color-light-dark;
 $code-block-font-size: 13px;
 $code-block-line-height: 19px;

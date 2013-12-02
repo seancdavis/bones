@@ -10,7 +10,7 @@
  }
 }
 
-@mixin border($color: $accent-light-dark, $weight: 1px, $style: solid) {
+@mixin border($color: $color-light-dark, $weight: 1px, $style: solid) {
   border: $weight $style $color;
 }
 

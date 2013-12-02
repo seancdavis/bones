@@ -1,12 +1,12 @@
 /* Color Palette
 ============================ */
-$primary: #1B8FB8; // used most often by default
-$accent-1: #D65030;
-$accent-2: #D48D2B;
-$accent-3: #1F7D24;
-$accent-4: #BDAD1B;
-$accent-dark: #444444; // designed to be a dark color
-$accent-light: #efefef; // designed to be a light color
+$color-1: #1B8FB8; // used most often by default
+$color-2: #D65030;
+$color-3: #D48D2B;
+$color-4: #1F7D24;
+$color-5: #BDAD1B;
+$color-dark: #444444; // designed to be a dark color
+$color-light: #efefef; // designed to be a light color
 
 // used primarily for notifications:
 $warning: #CCA300;
@@ -28,48 +28,48 @@ $color-factor-3: 25%;
  * You don't need to change anything below, but can
  * if you'd like, or you can add new variations.
  */
-$primary-light:     lighten($primary, $color-factor-1);
-$primary-lighter:   lighten($primary, $color-factor-2);
-$primary-lightest:  lighten($primary, $color-factor-3);
-$primary-dark:      darken($primary, $color-factor-1);
-$primary-darker:    darken($primary, $color-factor-2);
-$primary-darkest:   darken($primary, $color-factor-3);
+$color-1-light:     lighten($color-1, $color-factor-1);
+$color-1-lighter:   lighten($color-1, $color-factor-2);
+$color-1-lightest:  lighten($color-1, $color-factor-3);
+$color-1-dark:      darken($color-1, $color-factor-1);
+$color-1-darker:    darken($color-1, $color-factor-2);
+$color-1-darkest:   darken($color-1, $color-factor-3);
 
-$accent-1-light:     lighten($accent-1, $color-factor-1);
-$accent-1-lighter:   lighten($accent-1, $color-factor-2);
-$accent-1-lightest:  lighten($accent-1, $color-factor-3);
-$accent-1-dark:      darken($accent-1, $color-factor-1);
-$accent-1-darker:    darken($accent-1, $color-factor-2);
-$accent-1-darkest:   darken($accent-1, $color-factor-3);
+$color-2-light:     lighten($color-2, $color-factor-1);
+$color-2-lighter:   lighten($color-2, $color-factor-2);
+$color-2-lightest:  lighten($color-2, $color-factor-3);
+$color-2-dark:      darken($color-2, $color-factor-1);
+$color-2-darker:    darken($color-2, $color-factor-2);
+$color-2-darkest:   darken($color-2, $color-factor-3);
 
-$accent-2-light:     lighten($accent-2, $color-factor-1);
-$accent-2-lighter:   lighten($accent-2, $color-factor-2);
-$accent-2-lightest:  lighten($accent-2, $color-factor-3);
-$accent-2-dark:      darken($accent-2, $color-factor-1);
-$accent-2-darker:    darken($accent-2, $color-factor-2);
-$accent-2-darkest:   darken($accent-2, $color-factor-3);
+$color-3-light:     lighten($color-3, $color-factor-1);
+$color-3-lighter:   lighten($color-3, $color-factor-2);
+$color-3-lightest:  lighten($color-3, $color-factor-3);
+$color-3-dark:      darken($color-3, $color-factor-1);
+$color-3-darker:    darken($color-3, $color-factor-2);
+$color-3-darkest:   darken($color-3, $color-factor-3);
 
-$accent-3-light:     lighten($accent-3, $color-factor-1);
-$accent-3-lighter:   lighten($accent-3, $color-factor-2);
-$accent-3-lightest:  lighten($accent-3, $color-factor-3);
-$accent-3-dark:      darken($accent-3, $color-factor-1);
-$accent-3-darker:    darken($accent-3, $color-factor-2);
-$accent-3-darkest:   darken($accent-3, $color-factor-3);
+$color-4-light:     lighten($color-4, $color-factor-1);
+$color-4-lighter:   lighten($color-4, $color-factor-2);
+$color-4-lightest:  lighten($color-4, $color-factor-3);
+$color-4-dark:      darken($color-4, $color-factor-1);
+$color-4-darker:    darken($color-4, $color-factor-2);
+$color-4-darkest:   darken($color-4, $color-factor-3);
 
-$accent-4-light:     lighten($accent-4, $color-factor-1);
-$accent-4-lighter:   lighten($accent-4, $color-factor-2);
-$accent-4-lightest:  lighten($accent-4, $color-factor-3);
-$accent-4-dark:      darken($accent-4, $color-factor-1);
-$accent-4-darker:    darken($accent-4, $color-factor-2);
-$accent-4-darkest:   darken($accent-4, $color-factor-3);
+$color-5-light:     lighten($color-5, $color-factor-1);
+$color-5-lighter:   lighten($color-5, $color-factor-2);
+$color-5-lightest:  lighten($color-5, $color-factor-3);
+$color-5-dark:      darken($color-5, $color-factor-1);
+$color-5-darker:    darken($color-5, $color-factor-2);
+$color-5-darkest:   darken($color-5, $color-factor-3);
 
-$accent-dark-light:     lighten($accent-dark, $color-factor-1);
-$accent-dark-lighter:   lighten($accent-dark, $color-factor-2);
-$accent-dark-lightest:  lighten($accent-dark, $color-factor-3);
+$color-dark-light:     lighten($color-dark, $color-factor-1);
+$color-dark-lighter:   lighten($color-dark, $color-factor-2);
+$color-dark-lightest:  lighten($color-dark, $color-factor-3);
 
-$accent-light-dark:      darken($accent-light, $color-factor-1);
-$accent-light-darker:    darken($accent-light, $color-factor-2);
-$accent-light-darkest:   darken($accent-light, $color-factor-3);
+$color-light-dark:      darken($color-light, $color-factor-1);
+$color-light-darker:    darken($color-light, $color-factor-2);
+$color-light-darkest:   darken($color-light, $color-factor-3);
 
 $success-light:     lighten($success, $color-factor-1);
 $success-lighter:   lighten($success, $color-factor-2);

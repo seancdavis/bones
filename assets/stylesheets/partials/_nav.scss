@@ -178,7 +178,7 @@ ul.breadcrumbs {
     }
     &:after {
       content: $nav-breadcrumbs-separator;
-      color: $accent-light-darker;
+      color: $color-light-darker;
     }
     &:last-child:after {
       content: "";

@@ -13,7 +13,7 @@ $h5-font-size: 1.35em;
 $h6-font-size: 1.0em;
 
 // subheadings
-$subheading-color: $accent-dark-lightest;
+$subheading-color: $color-dark-lightest;
 $subheading-font-weight: 200;
 $subheading-size-factor: 0.75;
 
@@ -31,14 +31,14 @@ $paragraph-color: $default-color;
 // blockquotes
 $blockquote-padding: 0.25em 0.75em;
 $blockquote-margin: $default-margin;
-$blockquote-background: $accent-light;
-$blockquote-border-left: 7.5px solid $accent-light-dark;
+$blockquote-background: $color-light;
+$blockquote-border-left: 7.5px solid $color-light-dark;
 $blockquote-font-size: $default-font-size;
 
 // links
-$link-color: $primary;
+$link-color: $color-1;
 $link-underline: false;
-$link-hover-color: $primary-darker;
+$link-hover-color: $color-1-darker;
 $link-hover-underline: false;
 
 // individual characters
