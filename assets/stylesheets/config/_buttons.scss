@@ -2,7 +2,7 @@
 ============================ */
 // font
 $btn-color: $color-light; // default font color
-$btn-font-size: $default-font-size; // default font size
+$btn-fontSize: $default-fontSize; // default font size
 
 // background
 $btn-background-color: $color-dark-lightest; // default button bg
@@ -21,6 +21,6 @@ $btn-border: none; // border
 
 /* Size Factors
 ============================ */
-$btn-huge-font-size:   200%; // huge
-$btn-large-font-size:  150%; // large
-$btn-small-font-size:  75%;  // small
+$btn-huge-fontSize:   200%; // huge
+$btn-large-fontSize:  150%; // large
+$btn-small-fontSize:  75%;  // small

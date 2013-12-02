@@ -5,7 +5,7 @@ $nav-container-background: transparent; // background of entire bar
 // basic styles
 $nav-padding: 0.35em 0;
 $nav-margin: 0 1.25em;
-$nav-font-size: 1.1em;
+$nav-fontSize: 1.1em;
 // effects
 $nav-background: transparent;
 $nav-color: $color-light-darkest;
@@ -25,7 +25,7 @@ $navbar-container-background: $color-1;
 // basic styles
 $navbar-padding: 0.35em 1.25em;
 $navbar-margin: 0;
-$navbar-font-size: 1.1em;
+$navbar-fontSize: 1.1em;
 // effects
 $navbar-background: transparent;
 $navbar-color: $color-light-dark;
@@ -45,7 +45,7 @@ $nav-vertical-container-background: transparent;
 // basic styles
 $nav-vertical-padding: 0.35em 1.25em;
 $nav-vertical-margin: 0;
-$nav-vertical-font-size: 1.1em;
+$nav-vertical-fontSize: 1.1em;
 // effects
 $nav-vertical-background: transparent;
 $nav-vertical-color: $color-light-darker;
@@ -65,7 +65,7 @@ $nav-filter-container-background: transparent;
 // basic styles
 $nav-filter-padding: 0.5em;
 $nav-filter-margin: 0 0.5em;
-$nav-filter-font-size: 0.9em;
+$nav-filter-fontSize: 0.9em;
 // effects
 $nav-filter-background: transparent;
 $nav-filter-color: $color-1;
@@ -94,7 +94,7 @@ $nav-breadcrumbs-container-background: transparent;
 // basic styles
 $nav-breadcrumbs-padding: 0.5em;
 $nav-breadcrumbs-margin: 0 0.5em;
-$nav-breadcrumbs-font-size: 0.9em;
+$nav-breadcrumbs-fontSize: 0.9em;
 $nav-breadcrumbs-separator: " \002F ";
 // effects
 $nav-breadcrumbs-background: transparent;

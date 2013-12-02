@@ -15,7 +15,7 @@
 }
 
 @mixin nav-a(
-  $font-size: $nav-font-size,
+  $fontSize: $nav-fontSize,
   $margin: $mav-margin,
   $padding: $nav-padding,
   $background: $nav-background,
@@ -27,7 +27,7 @@
   $hover-underline: $nav-hover-underline,
   $hover-transition: $nav-hover-transition
 ) {
-  font-size: $font-size;
+  fontSize: $fontSize;
   padding: $padding;
   margin: $margin;
   @include effect($background, $color, $transition);
@@ -59,7 +59,7 @@ nav, div.nav {
       a {
         display: inline-block;
         @include nav-a(
-          $nav-font-size,
+          $nav-fontSize,
           $nav-margin,
           $nav-padding,
           $nav-background,
@@ -81,7 +81,7 @@ nav.bar, div.nav.bar {
   ul {
     li a {
       @include nav-a(
-        $navbar-font-size,
+        $navbar-fontSize,
         $navbar-margin,
         $navbar-padding,
         $navbar-background,
@@ -105,7 +105,7 @@ nav.vertical, div.nav.vertical {
       a {
         display: block;
         @include nav-a(
-          $nav-vertical-font-size,
+          $nav-vertical-fontSize,
           $nav-vertical-margin,
           $nav-vertical-padding,
           $nav-vertical-background,
@@ -129,7 +129,7 @@ ul.filter {
     a {
       display: inline-block;
       @include nav-a(
-        $nav-filter-font-size,
+        $nav-filter-fontSize,
         $nav-filter-margin,
         $nav-filter-padding,
         $nav-filter-background,
@@ -163,7 +163,7 @@ ul.breadcrumbs {
     a {
       display: inline-block;
       @include nav-a(
-        $nav-breadcrumbs-font-size,
+        $nav-breadcrumbs-fontSize,
         $nav-breadcrumbs-margin,
         $nav-breadcrumbs-padding,
         $nav-breadcrumbs-background,

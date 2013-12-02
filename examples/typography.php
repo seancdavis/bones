@@ -72,7 +72,6 @@ function sayHello() {
   </ul>
   
   <hr>
-  <br>
   
   <ol>
     <li>Item 1</li>
@@ -88,6 +87,24 @@ function sayHello() {
       </ol>
     </li>
   </ol>
+  
+  <hr>
+  
+  <ul class="horizontal">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  
+  <hr>
+  
+  <ul class="no-bullet">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
   
   <br><br>
   

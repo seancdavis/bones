@@ -24,7 +24,7 @@ VARIABLES
 -------------------------- */
 @import 
   'config/colors',
-  'config/globals',
+  'config/_default',
   'config/wireframe',
   'config/typography',
   'config/code',
@@ -40,7 +40,7 @@ VARIABLES
 PARTIALS
 -------------------------- */
 @import 
-  'partials/globals',
+  'partials/_default',
   'partials/wireframe',
   'partials/typography',
   'partials/code',

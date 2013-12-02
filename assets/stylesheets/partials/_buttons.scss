@@ -5,8 +5,8 @@
   border: $btn-border;
   padding: $btn-padding;
   margin: $btn-margin;
-  font-size: $btn-font-size;
-  line-height: $btn-font-size;
+  fontSize: $btn-fontSize;
+  line-height: $btn-fontSize;
   &:hover {
     background-color: $hover-background-color;
     cursor: pointer;
@@ -36,15 +36,15 @@ input[type=submit], form > input[type=submit] {
 
 // sizes
 button.huge, a.button.huge {
-  font-size: $btn-huge-font-size;
+  fontSize: $btn-huge-fontSize;
 }
 
 button.large, a.button.large {
-  font-size: $btn-large-font-size;
+  fontSize: $btn-large-fontSize;
 }
 
 button.small, a.button.small {
-  font-size: $btn-small-font-size;
+  fontSize: $btn-small-fontSize;
 }
 
 // colors

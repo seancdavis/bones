@@ -1,61 +1,83 @@
-// apply to all headings
-$heading-margin: $default-margin;
-$heading-color: $default-color;
-$heading-caps: false;
-$heading-font-weight: 600;
-
+/* Headings
+============================ */
+// default
+$type-heading-margin: $default-margin;
+$type-heading-color: $default-color;
+$type-heading-textTransform: none;
+$type-heading-fontWeight: 600;
 // individual headings
-$h1-font-size: 2.75em;
-$h2-font-size: 2.4em;
-$h3-font-size: 2.05em;
-$h4-font-size: 1.7em;
-$h5-font-size: 1.35em;
-$h6-font-size: 1.0em;
+$type-h1-fontSize: 2.75em;
+$type-h2-fontSize: 2.4em;
+$type-h3-fontSize: 2.05em;
+$type-h4-fontSize: 1.7em;
+$type-h5-fontSize: 1.35em;
+$type-h6-fontSize: 1.0em;
 
-// subheadings
-$subheading-color: $color-dark-lightest;
-$subheading-font-weight: 200;
-$subheading-size-factor: 0.75;
+/* Subheadings
+============================ */
+$type-subheading-color: $color-dark-lightest;
+$type-subheading-fontWeight: 200;
+$type-subheading-sizeFactor: 0.75;
 
-// small headings
-$heading-small-factor: 60%;
-$heading-small-color: $subheading-color;
+/* Block-Level Elements
+============================ */
+// paragraph
+$type-paragraph-font: $default-fontSize;
+$type-paragraph-fontWeight: $default-fontWeight;
+$type-paragraph-margin: $default-margin;
+$type-paragraph-lineHeight: $default-lineHeight;
+$type-paragraph-color: $default-color;
+// blockquote
+$type-blockquote-padding: 0.25em 0.75em;
+$type-blockquote-margin: $default-margin;
+$type-blockquote-background: $color-light;
+$type-blockquote-borderLeft: 7.5px solid $color-light-dark;
+$type-blockquote-fontSize: $default-fontSize;
+// code block
+$type-codeBlock-margin: 1.25em 0;
+$type-codeBlock-padding: 1.25em 0.75em;
+$type-codeBlock-fontFamily: Consolas, monospace;
+$type-codeBlock-color: $default-color;
+$type-codeBlock-background: $color-light;
+$type-codeBlock-border: $color-light-dark;
+$type-codeBlock-fontSize: 13px;
+$type-codeBlock-lineHeight: 19px;
 
-// body copy
-$paragraph-font: $default-font-size;
-$paragraph-font-weight: $default-font-weight;
-$paragraph-margin: $default-margin;
-$paragraph-line-height: $default-line-height;
-$paragraph-color: $default-color;
-
-// blockquotes
-$blockquote-padding: 0.25em 0.75em;
-$blockquote-margin: $default-margin;
-$blockquote-background: $color-light;
-$blockquote-border-left: 7.5px solid $color-light-dark;
-$blockquote-font-size: $default-font-size;
-
+/* Inline Elements
+============================ */
 // links
-$link-color: $color-1;
-$link-underline: false;
-$link-hover-color: $color-1-darker;
-$link-hover-underline: false;
+$type-link-color: $color-1;
+$type-link-color-hover: $color-1-darker;
+$type-link-underline: false;
+$type-link-underline-hover: false;
+// code
+$type-code-font-family: Consolas, monospace;
+$type-code-color: $color-2;
+$type-code-fontSize: 12px;
+$type-code-background: $color-light;
+$type-code-padding: 1px 2px;
+$type-code-border: $color-light-dark;
+// small
+$type-small-fontFactor: 60%;
+// big
+$type-big-fontFactor: 140%;
+// strong
+$type-strong-fontWeight: 600;
 
-// individual characters
-$small-font-factor: 60%;
-$big-font-factor: 140%;
-$strong-font-weight: 600;
-
+/* Lists
+============================ */
 // unordered lists
-$ul-margin-left-level-1: -20px;
-$ul-margin-left-level-2: 0;
-$ul-style-type: disc;
-$ul-line-height: 1.5;
-
+$type-ul-marginLeft-1: -20px;
+$type-ul-marginLeft-2: 0;
+$type-ul-styleType: disc;
+$type-ul-lineHeight: 1.5;
 // ordered lists
-$ol-margin-left-level-1: $ul-margin-left-level-1;
-$ol-margin-left-level-2: $ul-margin-left-level-2;
-$ol-line-height: $ul-line-height;
+$type-ol-marginLeft-1: $type-ul-marginLeft-1;
+$type-ol-marginLeft-2: $type-ul-marginLeft-2;
+$type-ol-lineHeight: $type-ul-lineHeight;
 
-// horizontal lists
-$ul-h-padding: 0.5em 1.25em;
+/* Horizontal Rule
+============================ */
+$type-hr-color: $color-light-dark;
+$type-hr-height: 1px;
+$type-hr-margin: $default-margin;

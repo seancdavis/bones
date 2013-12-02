@@ -1,5 +1,10 @@
 /* Containers
 ============================ */
+@mixin container() {
+  clear: both;
+  display: block;
+}
+
 html, body {
   position: absolute;
   width: 100%;
@@ -8,9 +13,8 @@ html, body {
   left: 0;
 }
 
-@mixin container() {
-  clear: both;
-  display: block;
+div {
+  box-sizing: border-box;
 }
 
 .container {

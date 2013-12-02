@@ -15,20 +15,9 @@
 }
 
 * {
-  font-family: $default-font-family;
-  font-size: $default-font-size;
-  font-weight: $default-font-weight;
+  font-family: $default-fontFamily;
+  font-size: $default-fontSize;
+  font-weight: $default-fontWeight;
   color: $default-color;
-  line-height: $default-line-height;
-}
-
-hr {
-  border: none;
-  background: $hr-color;
-  margin: $hr-margin;
-  height: $hr-height;
-}
-
-div {
-  box-sizing: border-box;
+  line-height: $default-lineHeight;
 }

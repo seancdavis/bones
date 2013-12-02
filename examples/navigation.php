@@ -81,24 +81,6 @@
     <li class="active"><a href="#">Stop 4 (active)</a></li>
   </ul>
   
-  <h2>Lists</h2>
-  
-  <h3 class="subheading">Inline List</h3>
-  <ul class="horizontal">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-  </ul>
-  
-  <h3 class="subheading">List Without Bullets</h3>
-  <ul class="no-bullet">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-  </ul>
-  
 </div>
 
 <?php include 'partials/footer.php' ?>
