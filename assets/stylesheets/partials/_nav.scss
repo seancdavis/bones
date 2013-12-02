@@ -1,153 +1,187 @@
-@mixin nav-core() {
+@mixin normalize-ul() {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-@mixin horizontal-list-core() {
-  @include nav-core();
   li {
-    display: inline-block;
     margin: 0;
     padding: 0;
   }
 }
 
-@mixin horizontal-nav-core($bg, $fg, $bg-hover, $fg-hover, $padding, $font-size) {
-  @include horizontal-list-core;
-  li {
-    a {
-      display: inline-block;
-      font-size: $font-size;
-      margin: 0;
-      padding: $padding;
-      background-color: $bg;
-      color: $fg;
-      &:hover {
-        text-decoration: none;
-        background: $bg-hover;
-        color: $fg-hover;
-        span, i {
-          background: $bg-hover;
-          color: $fg-hover;
-        }
-      }
-      span, i {
-        background-color: $bg;
-        color: $fg;
-      }
+@mixin effect($bg, $color, $transition) {
+  background: $bg;
+  color: $color;
+  transition: $transition;
+}
+
+@mixin nav-a(
+  $font-size: $nav-font-size,
+  $margin: $mav-margin,
+  $padding: $nav-padding,
+  $background: $nav-background,
+  $color: $nav-color,
+  $underline: $nav-underline,
+  $transition: $nav-transition,
+  $hover-background: $nav-hover-background,
+  $hover-color: $nav-hover-color,
+  $hover-underline: $nav-hover-underline,
+  $hover-transition: $nav-hover-transition
+) {
+  font-size: $font-size;
+  padding: $padding;
+  margin: $margin;
+  @include effect($background, $color, $transition);
+  border-bottom: $underline;
+  &:hover {
+    @include effect($hover-background, $hover-color, $hover-transition);
+    border-bottom: $hover-underline;
+    span, i {
+      @include effect($hover-background, $hover-color, $hover-transition);
     }
+  }
+  span, i {
+    @include effect($background, $color, $transition)
   }
 }
 
-nav.top, div.top-nav {
+nav, div.nav {
   width: 100%;
-  background: $primary;
+  background: $nav-container-background;
   overflow: hidden;
   ul {
-    @include horizontal-nav-core(
-      $nav-tb-background,
-      $nav-tb-color,
-      $nav-tb-background-hover,
-      $nav-tb-color-hover,
-      $nav-tb-padding,
-      $nav-tb-font-size
-    );
+    @include normalize-ul();
     float: left;
     &.right {
       float: right;
     }
-  }
-  &.secondary {
-    background: $primary-light;
-    ul > li {
+    li {
+      display: inline-block;
       a {
-        color: $primary;
-        i, span {
-          color: $primary;
-        }
-        &:hover, &.active {
-          background: $primary;
-          color: $accent-light;
-          i, span {
-            background: $primary;
-            color: $accent-light;
-          }
-        }
+        display: inline-block;
+        @include nav-a(
+          $nav-font-size,
+          $nav-margin,
+          $nav-padding,
+          $nav-background,
+          $nav-color, 
+          $nav-underline,
+          $nav-transition,
+          $nav-hover-background,
+          $nav-hover-color,
+          $nav-hover-underline,
+          $nav-hover-transition
+        );
       }
     }
   }
 }
 
-nav.horizontal, div.horizontal-nav {
+nav.bar, div.nav.bar {
+  background: $navbar-container-background;
   ul {
-    @include horizontal-nav-core(
-      $nav-h-background,
-      $nav-h-color,
-      $nav-h-background-hover,
-      $nav-h-color-hover,
-      $nav-h-padding,
-      $nav-h-font-size
-    );
+    li a {
+      @include nav-a(
+        $navbar-font-size,
+        $navbar-margin,
+        $navbar-padding,
+        $navbar-background,
+        $navbar-color, 
+        $navbar-underline,
+        $navbar-transition,
+        $navbar-hover-background,
+        $navbar-hover-color,
+        $navbar-hover-underline,
+        $navbar-hover-transition
+      );
+    }
   }
 }
 
-nav.vertical, nav {
+nav.vertical, div.nav.vertical {
+  background: $nav-vertical-container-background;
   ul {
-    @include nav-core();
     li {
+      display: block;
       a {
         display: block;
-        padding: $nav-v-padding;
-        font-size: $nav-v-font-size;
-        background: $nav-v-background;
-        color: $nav-v-color;
-        &:hover, &.active {
-          text-decoration: none;
-          background: $nav-v-background-hover;
-          color: $nav-v-color-hover;
-          span, i {
-            background: $nav-v-background-hover;
-            color: $nav-v-color-hover;
-          }
-        }
-        span, i {
-          margin-right: 10px;
-          background: $nav-v-background;
-          color: $nav-v-color;
-        }
+        @include nav-a(
+          $nav-vertical-font-size,
+          $nav-vertical-margin,
+          $nav-vertical-padding,
+          $nav-vertical-background,
+          $nav-vertical-color, 
+          $nav-vertical-underline,
+          $nav-vertical-transition,
+          $nav-vertical-hover-background,
+          $nav-vertical-hover-color,
+          $nav-vertical-hover-underline,
+          $nav-vertical-hover-transition
+        );
       }
     }
   }
 }
 
 ul.filter {
-  @include horizontal-nav-core(
-    $nav-f-background,
-    $nav-f-color,
-    $nav-f-background-hover,
-    $nav-f-color-hover,
-    $nav-f-padding,
-    $nav-f-font-size
-  );
+  @include normalize-ul();
+  li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      @include nav-a(
+        $nav-filter-font-size,
+        $nav-filter-margin,
+        $nav-filter-padding,
+        $nav-filter-background,
+        $nav-filter-color, 
+        $nav-filter-underline,
+        $nav-filter-transition,
+        $nav-filter-hover-background,
+        $nav-filter-hover-color,
+        $nav-filter-hover-underline,
+        $nav-filter-hover-transition
+      );
+    }
+  }
 }
 
-ul.breadcrumb {
-  @include horizontal-nav-core(
-    $nav-b-background,
-    $nav-b-color,
-    $nav-b-background-hover,
-    $nav-b-color-hover,
-    $nav-b-padding,
-    $nav-b-font-size
-  );
+ul.breadcrumbs {
+  @include normalize-ul();
   li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      @include nav-a(
+        $nav-breadcrumbs-font-size,
+        $nav-breadcrumbs-margin,
+        $nav-breadcrumbs-padding,
+        $nav-breadcrumbs-background,
+        $nav-breadcrumbs-color, 
+        $nav-breadcrumbs-underline,
+        $nav-breadcrumbs-transition,
+        $nav-breadcrumbs-hover-background,
+        $nav-breadcrumbs-hover-color,
+        $nav-breadcrumbs-hover-underline,
+        $nav-breadcrumbs-hover-transition
+      );
+    }
     &:after {
-      content: $nav-b-separator;
+      content: $nav-breadcrumbs-separator;
       color: $accent-light-darker;
     }
     &:last-child:after {
       content: "";
+    }
+    &.active a {
+      background: $nav-breadcrumbs-active-background;
+      color: $nav-breadcrumbs-active-color;
+      font-weight: $nav-breadcrumbs-active-font-weight;
+      border-bottom: $nav-breadcrumbs-active-underline;
+    }
+    &.disabled a {
+      background: $nav-breadcrumbs-disabled-background;
+      color: $nav-breadcrumbs-disabled-color;
+      border-bottom: $nav-breadcrumbs-disabled-underline;
     }
   }
 }
