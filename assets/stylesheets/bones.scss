@@ -37,19 +37,18 @@ VARIABLES
 
 /*
 --------------------------
-PARTIALS
+STYLES
 -------------------------- */
 @import 
-  'partials/_default',
-  'partials/wireframe',
-  'partials/typography',
-  'partials/code',
-  'partials/buttons',
-  'partials/forms',
-  'partials/tables',
-  'partials/nav',
-  'partials/images',
-  'partials/components';
+  'styles/_default',
+  'styles/wireframe',
+  'styles/typography',
+  'styles/buttons',
+  'styles/forms',
+  'styles/tables',
+  'styles/nav',
+  'styles/images',
+  'styles/components';
 
 /*
 --------------------------
@@ -63,3 +62,10 @@ HELPERS
   'helpers/background',
   'helpers/border',
   'helpers/size';
+
+/*
+--------------------------
+PLUGINS
+-------------------------- */
+@import 
+  'plugins/syntax_highlighting';
