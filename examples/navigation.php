@@ -68,8 +68,8 @@
   <h3 class="subheading">Filters</h3>
   <ul class="filter">
     <li><a href="">Filter 1</a></li>
-    <li><a href="">Filter 2</a></li>
-    <li class="selected"><a href="">Filter 3 (selected)</a></li>
+    <li class="disabled"><a href="">Filter 2 (disabled)</a></li>
+    <li class="active"><a href="">Filter 3 (selected)</a></li>
     <li><a href="">Filter 4</a></li>
   </ul>
   

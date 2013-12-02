@@ -3,13 +3,12 @@
 √ layout
     √ containers
     √ grid
-* navigation
-    * top bar
-    * horizontal nav
-    * vertical nav (sidebar)    
-    * filters
-    * pagination
-    * breadcrumbs
+√ navigation
+    √ default
+    √ navbar
+    √ vertical nav / sidebar
+    √ filters
+    √ breadcrumbs
 * typography
     * headings
     * subheadings

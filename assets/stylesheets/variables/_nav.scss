@@ -76,6 +76,15 @@ $nav-filter-hover-background: $primary;
 $nav-filter-hover-color: $accent-light;
 $nav-filter-hover-transition: $nav-filter-transition;
 $nav-filter-hover-underline: none;
+// active state
+$nav-filter-active-font-weight: 600;
+$nav-filter-active-background: transparent;
+$nav-filter-active-color: $primary;
+$nav-filter-active-underline: none;
+// disabled state
+$nav-filter-disabled-background: transparent;
+$nav-filter-disabled-color: $accent-light-dark;
+$nav-filter-disabled-underline: none;
 
 
 /* Breadcrumbs

@@ -142,6 +142,17 @@ ul.filter {
         $nav-filter-hover-transition
       );
     }
+    &.active a {
+      background: $nav-filter-active-background;
+      color: $nav-filter-active-color;
+      font-weight: $nav-filter-active-font-weight;
+      border-bottom: $nav-filter-active-underline;
+    }
+    &.disabled a {
+      background: $nav-filter-disabled-background;
+      color: $nav-filter-disabled-color;
+      border-bottom: $nav-filter-disabled-underline;
+    }
   }
 }
 

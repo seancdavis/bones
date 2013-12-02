@@ -1,87 +1,175 @@
 # Navigation
 
-## Top Bar
+With Bones 1.0, we wanted to allow for some flexibility with navigation right out of the gate. Of course, there's still much work to be done here, but we have some options.
+
+## Default
+
+To make it easy to get right up and running, there are default options attributed to `<nav>` and `<div class="nav">`. This can help streamline your markup, especially if you only want one "type" of nav menu throughout your application.
+  
+We place lists within these nav containers like so:
 
 ```html
-<nav class="top-bar">
+<nav>
   <ul>
     <li><a href="#">Link 1</a></li>
     <li><a href="#">Link 2</a></li>
-    <li><a href="#">Link 3</a></li>
-    <li><a href="#">Link 4</a></li>
+    ...
   </ul>
 </nav>
 ```
 
+or:
 
-    <div class="top-nav">
-      <ul class="right">
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-      </ul>
-    </div>
+```html
+<div class="nav">
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    ...
+  </ul>
+</div>
+```
 
-## Horizontal (Inline) Nav
+### Floating Right
 
-    <nav class="horizontal">
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-      </ul>
-    </nav>
+You can easily push a navigation menu to the right by applying a `.right` selector to **the `<ul>` within the nav container**.
+  
+For example:
 
-Alternatively, you can use inline lists without the navigation connotation, should you have some other application in mind. In that case, the class hangs with the `<ul>` element instead of the `<nav>` element.
+```html
+<nav>
+  <ul class="right">
+    ...
+  </ul>
+</nav>
+```
 
+## Navbar
 
-    <ul class="horizontal">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-    </ul>
+The approach we took was to let you style the default navigation however you'd like. By default, Bones gives you free-floating links that are underlined on hover. 
+
+Still, most applications today are using some form of a navbar. Therefore, we have a second set of horizontal navigation meant for a navbar. All we need is the appropriate class selector `.bar`:
+
+```html
+<nav class="bar">
+  <ul>
+    <li><a href="#">...</a></li>
+    ...
+  </ul>
+</nav>
+```
+
+or
+
+```html
+<div class="nav bar">
+  <ul>
+    <li><a href="#">...</a></li>
+    ...
+  </ul>
+</div>
+```
+
+> The important note to remember here is to keep a space between `.nav` and `.bar` if using a `<div>` element, which simply helps us reuse some of the default styling.
+  
+### Floating Right
+
+We can also float these list items right while maintaining the bar itself by applying a `.right` selector to the `<ul>` within the container.
+  
+```html
+<div class="nav bar">
+  <ul class="right">
+    ...
+  </ul>
+</div>
+```
 
 ## Vertical Nav (Sidebar)
 
-    <nav class="vertical">
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-      </ul>
-    </nav>
+Vertical navigation is often useful in a sidebar type of application. All we need here is the `.vertical` selector:
 
-For vertical, unordered lists without the bullet points, we need:
+```html
+<nav class="vertical">
+  <ul>
+    <li><a href="#">...</a></li>
+    ...
+  </ul>
+</nav>
+```
 
-    <ul class="no-bullet">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-    </ul>
+or:
+
+```html
+<nav class="nav vertical">
+  <ul>
+    <li><a href="#">...</a></li>
+    ...
+  </ul>
+</nav>
+```
+
+> Again, keep a space between `.nav` and `.vertical` if using a `<div>` element.
 
 ## Filters
 
-    <ul class="filter">
-      <li><a href="">Filter 1</a></li>
-      <li><a href="">Filter 2</a></li>
-      <li class="selected"><a href="">Filter 3 (selected)</a></li>
-      <li><a href="">Filter 4</a></li>
-    </ul>
+Filters are a specific type of horizontal navigation, but often you want them to look different than your default nav. Once again, one simple selector gets the job done:
 
-## Pagination
+```html
+<ul class="filter">
+  <li><a href="#">...</a></li>
+  ...
+</ul>
+```
 
-Not entirely sure how to do this yet...
+Do note here we **don't need a container**, but apply the `.filter` selector to the `<ul>` element.
+  
+You also have an option for disabled and active list items by adding the appropriate class to the `<li>` element:
+
+```html
+<ul class="filter">
+  <li class="disabled"><a href="#">...</a></li>
+  <li class="active"><a href="#">...</a></li>
+  ...
+</ul>
+```
 
 ## Breadcrumbs
 
-    <ul class="breadcrumb">
-      <li><a href="#">Stop 1</a></li>
-      <li class="disabled"><a href="#">Stop 2 (disabled)</a></li>
-      <li><a href="#">Stop 3</a></li>
-      <li class="active"><a href="#">Stop 4 (active)</a></li>
-    </ul>
+Breadcrumbs work just like filters, but with an additional variable for the separator between the items.
+
+```html
+<ul class="breadcrumbs">
+  <li><a href="#">...</a></li>
+  ...
+</ul>
+```
+
+Again, here we have `.disabled` and `.active` selectors.
+
+```html
+<ul class="breadcrumbs">
+  <li class="disabled"><a href="#">...</a></li>
+  <li class="active"><a href="#">...</a></li>
+  ...
+</ul>
+```
+
+## Lists
+
+You don't necessarily need a list to be a navigation menu to benefit from some of these styles. We have a plain (no-bullet) vertical list available as:
+
+```html
+<ul class="no-bullet">
+  <li>...</li>
+  ...
+</ul>
+```
+
+Or you can horizontal list:
+
+```html
+<ul class="horizontal">
+  <li>...</li>
+  ...
+</ul>
+```
