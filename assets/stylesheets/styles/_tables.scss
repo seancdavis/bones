@@ -1,6 +1,8 @@
+/* Standard Tables
+============================ */
 table {
-  width: $table-width;
-  border: $table-border;
+  width: $table-default-width;
+  border: $table-default-border;
   th, td {
     padding: $table-cell-padding;
   }
@@ -8,12 +10,12 @@ table {
     background: $table-header-background;
     th {
       color: $table-header-color;
-      font-weight: $table-header-font-weight;
+      font-weight: $table-header-fontWeight;
     }
   }
   tbody tr {
     &:nth-child(even) {
-      background: $table-cell-accent-background;
+      background: $table-cell-altBackground;
     }
   }
 }

@@ -22,12 +22,11 @@
     √ colors
     √ block-level
     √ disabled
-* tables
-    * default
-    * --> we want tables because we'll add more options down the road
 √ forms
     √ standard forms
     √ fieldsets
+√ tables
+    √ standard tables
 * images
     * options???
 * helpers
