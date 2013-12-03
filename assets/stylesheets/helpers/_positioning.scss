@@ -1,4 +1,5 @@
-// float
+/* Float
+============================ */
 .float-left {
   float: left;
 }
@@ -6,7 +7,8 @@
   float: right;
 }
 
-// text-align
+/* Align
+============================ */
 .text-left {
   text-align: left;
 }
@@ -16,7 +18,6 @@
 .text-right {
   text-align: right;
 }
-
 .center {
   display: block;
   margin-right: auto;

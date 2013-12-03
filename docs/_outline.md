@@ -27,16 +27,17 @@
     √ fieldsets
 √ tables
     √ standard tables
-* images
-    * options???
-* helpers
-    * background
-    * color
-    * border
-    * size
-    * positioning
-    * margin
-    * padding
+√ images
+    √ sizes
+    √ styles
+√ helpers
+    √ background
+    √ color
+    √ border
+    √ size
+    √ positioning
+    √ margin
+    √ padding
 * css components
     * icons
     * callouts / panels
