@@ -1,12 +1,14 @@
+/* Default
+============================ */
 @mixin button($color: $color-light, $background-color: $color-1, $hover-background-color: $color-1-dark, $active-background-color: $color-1-darker) {
   color: $color;
   background-color: $background-color;
   display: inline-block;
-  border: $btn-border;
-  padding: $btn-padding;
-  margin: $btn-margin;
-  fontSize: $btn-fontSize;
-  line-height: $btn-fontSize;
+  border: $button-default-border;
+  padding: $button-default-padding;
+  margin: $button-default-margin;
+  font-size: $button-default-fontSize;
+  line-height: $button-default-fontSize;
   &:hover {
     background-color: $hover-background-color;
     cursor: pointer;
@@ -17,13 +19,12 @@
   }
 }
 
-// default buttons
 button {
-  @include button($btn-color, $btn-background-color, $btn-hover-background-color, $btn-active-background-color);
+  @include button($button-default-color, $button-default-background, $button-default-background-hover, $button-default-background-active);
 }
 
 a.button, .button {
-  @include button($btn-color, $btn-background-color, $btn-hover-background-color, $btn-active-background-color);
+  @include button($button-default-color, $button-default-background, $button-default-background-hover, $button-default-background-active);
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -31,23 +32,25 @@ a.button, .button {
 }
 
 input[type=submit], form > input[type=submit] {
-  @include button($btn-color, $btn-background-color, $btn-hover-background-color, $btn-active-background-color);
+  @include button($button-default-color, $button-default-background, $button-default-background-hover, $button-default-background-active);
 }
 
-// sizes
+/* Size Factors
+============================ */
 button.huge, a.button.huge {
-  fontSize: $btn-huge-fontSize;
+  font-size: $button-sizeFactor-huge;
 }
 
 button.large, a.button.large {
-  fontSize: $btn-large-fontSize;
+  font-size: $button-sizeFactor-large;
 }
 
 button.small, a.button.small {
-  fontSize: $btn-small-fontSize;
+  font-size: $button-sizeFactor-small;
 }
 
-// colors
+/* Colors
+============================ */
 button.primary, a.button.primary {
   @include button($color-light, $color-1, $color-1-dark, $color-1-darker);
 }
@@ -88,14 +91,16 @@ button.alert, a.button.alert {
   @include button($color-light, $color-danger, $color-danger-dark, $color-danger-darker);
 }
 
-// block
+/* Block-Level
+============================ */
 button.block, a.button.block, input[type=submit].block, form > input[type=submit].block {
-  @include button($btn-color, $btn-background-color, $btn-hover-background-color, $btn-active-background-color);
+  @include button($button-default-color, $button-default-background, $button-default-background-hover, $button-default-background-active);
   display: block;
   width: 100%;
 }
 
-// disabled
+/* Disabled
+============================ */
 button, input[type=submit], form > input[type=submit] {
   &:disabled {
     @include button($color-dark-lightest, $color-dark-lighter, $color-dark-lighter, $color-dark-lighter);
