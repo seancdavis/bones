@@ -1,3 +1,5 @@
+/* Mixins
+============================ */
 @mixin normalize-ul() {
   list-style: none;
   margin: 0;
@@ -15,19 +17,19 @@
 }
 
 @mixin nav-a(
-  $fontSize: $nav-fontSize,
+  $fontSize: $nav-default-fontSize,
   $margin: $mav-margin,
-  $padding: $nav-padding,
-  $background: $nav-background,
-  $color: $nav-color,
-  $underline: $nav-underline,
-  $transition: $nav-transition,
-  $hover-background: $nav-hover-background,
-  $hover-color: $nav-hover-color,
-  $hover-underline: $nav-hover-underline,
-  $hover-transition: $nav-hover-transition
+  $padding: $nav-default-padding,
+  $background: $nav-default-background,
+  $color: $nav-default-color,
+  $underline: $nav-default-underline,
+  $transition: $nav-default-transition,
+  $hover-background: $nav-default-background-hover,
+  $hover-color: $nav-default-color-hover,
+  $hover-underline: $nav-default-underline-hover,
+  $hover-transition: $nav-default-transition-hover
 ) {
-  fontSize: $fontSize;
+  font-size: $fontSize;
   padding: $padding;
   margin: $margin;
   @include effect($background, $color, $transition);
@@ -44,9 +46,11 @@
   }
 }
 
+/* Default Nav Menu
+============================ */
 nav, div.nav {
   width: 100%;
-  background: $nav-container-background;
+  background: $nav-default-background;
   overflow: hidden;
   ul {
     @include normalize-ul();
@@ -59,46 +63,50 @@ nav, div.nav {
       a {
         display: inline-block;
         @include nav-a(
-          $nav-fontSize,
-          $nav-margin,
-          $nav-padding,
-          $nav-background,
-          $nav-color, 
-          $nav-underline,
-          $nav-transition,
-          $nav-hover-background,
-          $nav-hover-color,
-          $nav-hover-underline,
-          $nav-hover-transition
+          $nav-default-fontSize,
+          $nav-default-margin,
+          $nav-default-padding,
+          $nav-default-background,
+          $nav-default-color, 
+          $nav-default-underline,
+          $nav-default-transition,
+          $nav-default-background-hover,
+          $nav-default-color-hover,
+          $nav-default-underline-hover,
+          $nav-default-transition-hover
         );
       }
     }
   }
 }
 
+/* Navbar
+============================ */
 nav.bar, div.nav.bar {
-  background: $navbar-container-background;
+  background: $nav-bar-background;
   ul {
     li a {
       @include nav-a(
-        $navbar-fontSize,
-        $navbar-margin,
-        $navbar-padding,
-        $navbar-background,
-        $navbar-color, 
-        $navbar-underline,
-        $navbar-transition,
-        $navbar-hover-background,
-        $navbar-hover-color,
-        $navbar-hover-underline,
-        $navbar-hover-transition
+        $nav-bar-fontSize,
+        $nav-bar-margin,
+        $nav-bar-padding,
+        $nav-bar-background,
+        $nav-bar-color, 
+        $nav-bar-underline,
+        $nav-bar-transition,
+        $nav-bar-background-hover,
+        $nav-bar-color-hover,
+        $nav-bar-underline-hover,
+        $nav-bar-transition-hover
       );
     }
   }
 }
 
+/* Vertical / Sidebar
+============================ */
 nav.vertical, div.nav.vertical {
-  background: $nav-vertical-container-background;
+  background: $nav-vertical-background;
   ul {
     li {
       display: block;
@@ -112,16 +120,18 @@ nav.vertical, div.nav.vertical {
           $nav-vertical-color, 
           $nav-vertical-underline,
           $nav-vertical-transition,
-          $nav-vertical-hover-background,
-          $nav-vertical-hover-color,
-          $nav-vertical-hover-underline,
-          $nav-vertical-hover-transition
+          $nav-vertical-background-hover,
+          $nav-vertical-color-hover,
+          $nav-vertical-underline-hover,
+          $nav-vertical-transition-hover
         );
       }
     }
   }
 }
 
+/* Filters
+============================ */
 ul.filter {
   @include normalize-ul();
   li {
@@ -136,26 +146,28 @@ ul.filter {
         $nav-filter-color, 
         $nav-filter-underline,
         $nav-filter-transition,
-        $nav-filter-hover-background,
-        $nav-filter-hover-color,
-        $nav-filter-hover-underline,
-        $nav-filter-hover-transition
+        $nav-filter-background-hover,
+        $nav-filter-color-hover,
+        $nav-filter-underline-hover,
+        $nav-filter-transition-hover
       );
     }
     &.active a {
-      background: $nav-filter-active-background;
-      color: $nav-filter-active-color;
-      font-weight: $nav-filter-active-font-weight;
-      border-bottom: $nav-filter-active-underline;
+      background:     $nav-filter-background-active;
+      color:          $nav-filter-color-active;
+      font-weight:    $nav-filter-font-weight-active;
+      border-bottom:  $nav-filter-underline-active;
     }
     &.disabled a {
-      background: $nav-filter-disabled-background;
-      color: $nav-filter-disabled-color;
-      border-bottom: $nav-filter-disabled-underline;
+      background:     $nav-filter-background-disabled;
+      color:          $nav-filter-color-disabled;
+      border-bottom:  $nav-filter-underline-disabled;
     }
   }
 }
 
+/* Breadcrumbs
+============================ */
 ul.breadcrumbs {
   @include normalize-ul();
   li {
@@ -170,10 +182,10 @@ ul.breadcrumbs {
         $nav-breadcrumbs-color, 
         $nav-breadcrumbs-underline,
         $nav-breadcrumbs-transition,
-        $nav-breadcrumbs-hover-background,
-        $nav-breadcrumbs-hover-color,
-        $nav-breadcrumbs-hover-underline,
-        $nav-breadcrumbs-hover-transition
+        $nav-breadcrumbs-background-hover,
+        $nav-breadcrumbs-color-hover,
+        $nav-breadcrumbs-underline-hover,
+        $nav-breadcrumbs-transition-hover
       );
     }
     &:after {
@@ -184,15 +196,15 @@ ul.breadcrumbs {
       content: "";
     }
     &.active a {
-      background: $nav-breadcrumbs-active-background;
-      color: $nav-breadcrumbs-active-color;
-      font-weight: $nav-breadcrumbs-active-font-weight;
-      border-bottom: $nav-breadcrumbs-active-underline;
+      background:     $nav-breadcrumbs-background-active;
+      color:          $nav-breadcrumbs-color-active;
+      font-weight:    $nav-breadcrumbs-font-weight-active;
+      border-bottom:  $nav-breadcrumbs-underline-active;
     }
     &.disabled a {
-      background: $nav-breadcrumbs-disabled-background;
-      color: $nav-breadcrumbs-disabled-color;
-      border-bottom: $nav-breadcrumbs-disabled-underline;
+      background:     $nav-breadcrumbs-background-disabled;
+      color:          $nav-breadcrumbs-color-disabled;
+      border-bottom:  $nav-breadcrumbs-underline-disabled;
     }
   }
 }

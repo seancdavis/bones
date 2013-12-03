@@ -1,41 +1,41 @@
 /* Default Nav Menu
 ============================ */
 // container
-$nav-container-background: transparent; // background of entire bar
+$nav-default-background: transparent; // background of entire bar
 // basic styles
-$nav-padding: 0.35em 0;
-$nav-margin: 0 1.25em;
-$nav-fontSize: 1.1em;
+$nav-default-padding: 0.35em 0;
+$nav-default-margin: 0 1.25em;
+$nav-default-fontSize: 1.1em;
 // effects
-$nav-background: transparent;
-$nav-color: $color-light-darkest;
-$nav-transition: all 0.35s linear; // keep set to "all" if you want all styles/effects to transition
-$nav-underline: 2px solid transparent; // stylish substitute for underline -- a "border-bottom" style, NOT "text-decoration"
+$nav-default-background: transparent;
+$nav-default-color: $color-light-darkest;
+$nav-default-transition: all 0.35s linear; // keep set to "all" if you want all styles/effects to transition
+$nav-default-underline: 2px solid transparent; // stylish substitute for underline -- a "border-bottom" style, NOT "text-decoration"
 // hover state
-$nav-hover-background: transparent;
-$nav-hover-color: $color-1;
-$nav-hover-transition: $nav-transition;
-$nav-hover-underline: 2px solid $color-1;
+$nav-default-background-hover: transparent;
+$nav-default-color-hover: $color-1;
+$nav-default-transition-hover: $nav-default-transition;
+$nav-default-underline-hover: 2px solid $color-1;
 
 
 /* Navbar
 ============================ */
 // container
-$navbar-container-background: $color-1;
+$nav-bar-container-background: $color-1;
 // basic styles
-$navbar-padding: 0.35em 1.25em;
-$navbar-margin: 0;
-$navbar-fontSize: 1.1em;
+$nav-bar-padding: 0.35em 1.25em;
+$nav-bar-margin: 0;
+$nav-bar-fontSize: 1.1em;
 // effects
-$navbar-background: transparent;
-$navbar-color: $color-light-dark;
-$navbar-transition: all 0.35s linear;
-$navbar-underline: none;
+$nav-bar-background: transparent;
+$nav-bar-color: $color-light-dark;
+$nav-bar-transition: all 0.35s linear;
+$nav-bar-underline: none;
 // hover state
-$navbar-hover-background: $color-1-lighter;
-$navbar-hover-color: $navbar-color;
-$navbar-hover-transition: $navbar-transition;
-$navbar-hover-underline: none;
+$nav-bar-background-hover: $color-1-lighter;
+$nav-bar-color-hover: $nav-bar-color;
+$nav-bar-transition-hover: $nav-bar-transition;
+$nav-bar-underline-hover: none;
 
 
 /* Vertical Nav
@@ -52,10 +52,10 @@ $nav-vertical-color: $color-light-darker;
 $nav-vertical-transition: all 0.35s linear;
 $nav-vertical-underline: none;
 // hover state
-$nav-vertical-hover-background: transparent;
-$nav-vertical-hover-color: $color-1;
-$nav-vertical-hover-transition: $nav-vertical-transition;
-$nav-vertical-hover-underline: none;
+$nav-vertical-background-hover: transparent;
+$nav-vertical-color-hover: $color-1;
+$nav-vertical-transition-hover: $nav-vertical-transition;
+$nav-vertical-underline-hover: none;
 
 
 /* Filters
@@ -72,19 +72,19 @@ $nav-filter-color: $color-1;
 $nav-filter-transition: all 0.35s linear;
 $nav-filter-underline: none;
 // hover state
-$nav-filter-hover-background: $color-1;
-$nav-filter-hover-color: $color-light;
-$nav-filter-hover-transition: $nav-filter-transition;
-$nav-filter-hover-underline: none;
+$nav-filter-background-hover: $color-1;
+$nav-filter-color-hover: $color-light;
+$nav-filter-transition-hover: $nav-filter-transition;
+$nav-filter-underline-hover: none;
 // active state
-$nav-filter-active-font-weight: 600;
-$nav-filter-active-background: transparent;
-$nav-filter-active-color: $color-1;
-$nav-filter-active-underline: none;
+$nav-filter-font-weight-active: 600;
+$nav-filter-background-active: transparent;
+$nav-filter-color-active: $color-1;
+$nav-filter-underline-active: none;
 // disabled state
-$nav-filter-disabled-background: transparent;
-$nav-filter-disabled-color: $color-light-dark;
-$nav-filter-disabled-underline: none;
+$nav-filter-background-disabled: transparent;
+$nav-filter-color-disabled: $color-light-dark;
+$nav-filter-underline-disabled: none;
 
 
 /* Breadcrumbs
@@ -102,16 +102,16 @@ $nav-breadcrumbs-color: $color-light-darkest;
 $nav-breadcrumbs-transition: all 0.35s linear;
 $nav-breadcrumbs-underline: none;
 // hover state
-$nav-breadcrumbs-hover-background: transparent;
-$nav-breadcrumbs-hover-color: $color-1;
-$nav-breadcrumbs-hover-transition: $nav-breadcrumbs-transition;
-$nav-breadcrumbs-hover-underline: none;
+$nav-breadcrumbs-background-hover: transparent;
+$nav-breadcrumbs-color-hover: $color-1;
+$nav-breadcrumbs-transition-hover: $nav-breadcrumbs-transition;
+$nav-breadcrumbs-underline-hover: none;
 // active state
-$nav-breadcrumbs-active-font-weight: 600;
-$nav-breadcrumbs-active-background: transparent;
-$nav-breadcrumbs-active-color: $color-1;
-$nav-breadcrumbs-active-underline: none;
+$nav-breadcrumbs-font-weight-active: 600;
+$nav-breadcrumbs-background-active: transparent;
+$nav-breadcrumbs-color-active: $color-1;
+$nav-breadcrumbs-underline-active: none;
 // disabled state
-$nav-breadcrumbs-disabled-background: transparent;
-$nav-breadcrumbs-disabled-color: $color-light-dark;
-$nav-breadcrumbs-disabled-underline: none;
+$nav-breadcrumbs-background-disabled: transparent;
+$nav-breadcrumbs-color-disabled: $color-light-dark;
+$nav-breadcrumbs-underline-disabled: none;

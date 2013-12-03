@@ -3,7 +3,7 @@
 √ wireframe
     √ containers
     √ grid
-√ navigation
+√ nav
     √ default
     √ navbar
     √ vertical nav / sidebar
