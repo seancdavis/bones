@@ -145,6 +145,16 @@ If you'd like a horizontal or inline list, you just need a `.horizontal` selecto
 </ul>
 ```
 
+### Bullet Styling
+
+You can choose your bullet styling on the fly, with these options:
+
+```html
+<ul class="square">...</ul>
+<ul class="circle">...</ul>
+<ul class="disc">...</ul>
+```
+
 ### No Bullets
 
 Unordered lists have bullets by default. To remove bullets, just add the `.no-bullet` class:
