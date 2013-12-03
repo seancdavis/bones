@@ -7,18 +7,18 @@
 
 p, div {
   &.alert {
-    @include notification($danger);
+    @include notification($color-danger);
   }
   &.notice {
     @include notification($color-1);
   }
   &.danger {
-    @include notification($danger);
+    @include notification($color-danger);
   }
   &.warning {
-    @include notification($warning);
+    @include notification($color-warning);
   }
   &.success {
-    @include notification($success);
+    @include notification($color-success);
   }
 }

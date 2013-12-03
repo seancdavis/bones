@@ -77,15 +77,15 @@ button.light, a.button.light {
 }
 
 button.success, a.button.success {
-  @include button($color-light, $success, $success-dark, $success-darker);
+  @include button($color-light, $color-success, $color-success-dark, $color-success-darker);
 }
 
 button.notice, a.button.notice {
-  @include button($color-light, $warning, $warning-dark, $warning-darker);
+  @include button($color-light, $color-warning, $color-warning-dark, $color-warning-darker);
 }
 
 button.alert, a.button.alert {
-  @include button($color-light, $danger, $danger-dark, $danger-darker);
+  @include button($color-light, $color-danger, $color-danger-dark, $color-danger-darker);
 }
 
 // block

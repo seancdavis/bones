@@ -9,9 +9,9 @@ $color-dark: #444444; // designed to be a dark color
 $color-light: #efefef; // designed to be a light color
 
 // used primarily for notifications:
-$warning: #CCA300;
-$danger: #CC0000;
-$success: #008A2E;
+$color-warning: #CCA300;
+$color-danger: #CC0000;
+$color-success: #008A2E;
 
 /* Tones
 ============================ */
@@ -71,23 +71,23 @@ $color-light-dark:      darken($color-light, $color-factor-1);
 $color-light-darker:    darken($color-light, $color-factor-2);
 $color-light-darkest:   darken($color-light, $color-factor-3);
 
-$success-light:     lighten($success, $color-factor-1);
-$success-lighter:   lighten($success, $color-factor-2);
-$success-lightest:  lighten($success, $color-factor-3);
-$success-dark:      darken($success, $color-factor-1);
-$success-darker:    darken($success, $color-factor-2);
-$success-darkest:   darken($success, $color-factor-3);
+$color-success-light:     lighten($color-success, $color-factor-1);
+$color-success-lighter:   lighten($color-success, $color-factor-2);
+$color-success-lightest:  lighten($color-success, $color-factor-3);
+$color-success-dark:      darken($color-success, $color-factor-1);
+$color-success-darker:    darken($color-success, $color-factor-2);
+$color-success-darkest:   darken($color-success, $color-factor-3);
 
-$warning-light:     lighten($warning, $color-factor-1);
-$warning-lighter:   lighten($warning, $color-factor-2);
-$warning-lightest:  lighten($warning, $color-factor-3);
-$warning-dark:      darken($warning, $color-factor-1);
-$warning-darker:    darken($warning, $color-factor-2);
-$warning-darkest:   darken($warning, $color-factor-3);
+$color-warning-light:     lighten($color-warning, $color-factor-1);
+$color-warning-lighter:   lighten($color-warning, $color-factor-2);
+$color-warning-lightest:  lighten($color-warning, $color-factor-3);
+$color-warning-dark:      darken($color-warning, $color-factor-1);
+$color-warning-darker:    darken($color-warning, $color-factor-2);
+$color-warning-darkest:   darken($color-warning, $color-factor-3);
 
-$danger-light:     lighten($danger, $color-factor-1);
-$danger-lighter:   lighten($danger, $color-factor-2);
-$danger-lightest:  lighten($danger, $color-factor-3);
-$danger-dark:      darken($danger, $color-factor-1);
-$danger-darker:    darken($danger, $color-factor-2);
-$danger-darkest:   darken($danger, $color-factor-3);
+$color-danger-light:     lighten($color-danger, $color-factor-1);
+$color-danger-lighter:   lighten($color-danger, $color-factor-2);
+$color-danger-lightest:  lighten($color-danger, $color-factor-3);
+$color-danger-dark:      darken($color-danger, $color-factor-1);
+$color-danger-darker:    darken($color-danger, $color-factor-2);
+$color-danger-darkest:   darken($color-danger, $color-factor-3);

@@ -1,5 +1,6 @@
 # Structure
 
+√ default
 √ wireframe
     √ containers
     √ grid
@@ -12,14 +13,9 @@
 √ typography
     √ headings
     √ subheadings
-    √ small subheadings
-    √ paragraphs
-    √ blockquotes
-    √ unordered lists
-    √ ordered lists
-    √ code
-    √ code blocks
-    * syntax highlighting
+    √ block-level elements
+    √ inline elements
+    √ lists
 * buttons
     * markup
     * sizes
@@ -51,3 +47,5 @@
     * lightboxes (maybe not in v1)
     * labels ?
     * badges ?
+* plugins
+    * syntax highlighting
