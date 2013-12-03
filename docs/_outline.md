@@ -58,4 +58,7 @@
     * scss / sass
     * rails
 * customization / configuration
-* documentation / file structure
+* file structure
+    * documentation
+    * examples
+        * example site?
