@@ -1,39 +1,43 @@
 # Bones CSS Framework
-Bones is a flexible and responsive CSS framework. Bones is being developed 
-to use as a framework for rocktree's web projects.
 
-## Info & Background
+Welcome to Bones!
+
+Bones is a lightweight and flexible framework to help you create great-looking websites right out of the box.
+
+## Background
 
 ### What is it?
-It is a flexible and responsive CSS framework. Basically, it is a simple 
-set of CSS rules that help you quickly design good-looking projects 
-without worrying about all the silly little CSS rules here and there. It 
-is similar to <a href="http://foundation.zurb.com/" target="_blank">Foundation</a> 
-or <a href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>.
 
-### Documentation?
-This framework is in its infancy, and therefore there is not yet any 
-documentation to accompany it. As it grows and becomes more developed, 
-I'll share documentation.
+It's a styling framework -- a set of tools to help you create good, clean websites without much CSS effort. 
 
-### Why not just use Bootstrap or Foundation?
-Good question. Actually, great question. When I need something, I always 
-first look to see if there is something out there that will do <strong>exactly</strong>
-what I need it to. In the case of both Bootstrap and Foundation, they 
-are built for a wide audience, which means there are a lot of stylings 
-that, while they were meant to help most, where not what I was looking for. 
-In other words, just to achieve the rocktree look and feel, I was creating 
-large stylesheets just to override the styles Bootstrap and Foundation 
-had "helped" me create. So I built my own with the intent to keep it super 
-simple and easy to use (i.e. way less markup).
+It is similar to [Zurb's Foundation](http://foundation.zurb.com/) and [Twitter's Bootstrap](http://twitter.github.io/bootstrap/). So why the heck would I rebuild what's already been done? Well, in short, I found myself spending a lot of time trying to undo some of the styles that come standard with Foundation and Bootstrap. I wanted Bones to be even more stripped-down and simple out of the gate, and leave creating anything fancy to you.
 
-### What should I use?
-In your case, even though I would love for you to use my product, I would 
-highly recommend checking out these resources first. They are well documented 
-and well-developed. This framework is not yet documented and is still in its 
-infancy. Of course, my goal is to just provide a super simple base, so 
-if that's what you're looking for, then this might just be perfect for you.
+### A Little Baby
 
-## Getting Involved
-I'd love some help developing and designing if you're interested. Let's talk: 
-<a href="mailto:sean@rocktreedesign.com">sean@rocktreedesign.com</a>.
+Bones is a little baby. As it grows up, it will get better at what it does. But it'll also get fatter. So we're going to strive to keep Bones a healthy, young lad (or lady) by trying to find a balance between flexibility, feature-rich and weight.
+
+## Documentation
+
+Documentation can be found in the `docs` directory within the repo. A doc site is in development.
+
+## v2.0
+
+We have several features we're looking to add by v2.0, which is already in development. Here's the running list:
+
+* doc site
+* templates
+* better examples / example site
+
+Of course, there's also a running list of features and functionality to be added to the framework itself.
+
+## Contributing
+
+Got a simple fix or feature to add?
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+Or looking to help but not sure what to do? Send me a note: [sean@rocktreedesign.com](mailto:sean@rocktreedesign.com).
