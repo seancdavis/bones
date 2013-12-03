@@ -1,6 +1,6 @@
 # Structure
 
-√ layout
+√ wireframe
     √ containers
     √ grid
 √ navigation

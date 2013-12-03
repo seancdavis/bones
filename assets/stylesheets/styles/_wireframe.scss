@@ -18,12 +18,14 @@ div {
 }
 
 .container {
-  max-width: $container-width;
-  margin: $container-margin;
-  padding: $container-padding;
+  max-width: $wireframe-container-width;
+  margin: $wireframe-container-margin;
+  padding: $wireframe-container-padding;
   @include container;
 }
 
+/* Content
+============================ */
 .content {
   width: 100%;
   @include container;
@@ -42,14 +44,14 @@ div {
  * number of columns.
  *
  */
-@for $i from 1 through $grid-cols {
+@for $i from 1 through $wireframe-grid-numberOfCols {
   .column-#{$i} {
-    $col-width: percentage( (100 / $grid-cols) / 100 );
-    width: ($col-width * $i) - (2 * $grid-col-margin);
+    $col-width: percentage( (100 / $wireframe-grid-numberOfCols) / 100 );
+    width: ($col-width * $i) - (2 $wireframe-column-marginLeftRight);
     display: inline-block;
     float: left;
     height: 100%;
-    margin: $grid-col-margin-top-bottom $grid-col-margin;
-    padding: $grid-col-padding-top-bottom $grid-col-padding;
+    margin: $wireframe-column-marginTopBottom $wireframe-column-marginLeftRight;
+    padding: $wireframe-column-paddingTopBottom $wireframe-column-paddingLeftRight;
   }
 }
