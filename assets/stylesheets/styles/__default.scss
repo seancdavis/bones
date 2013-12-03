@@ -21,3 +21,7 @@
   color: $default-color;
   line-height: $default-lineHeight;
 }
+
+.clearfix {
+  @include clearfix();
+}
