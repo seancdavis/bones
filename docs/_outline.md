@@ -1,4 +1,4 @@
-# Structure
+# CSS
 
 √ default
 √ wireframe
@@ -22,13 +22,14 @@
     √ colors
     √ block-level
     √ disabled
-* forms
-    * standard forms
-    * fieldsets
-* images
-    * ?
 * tables
-    * ?
+    * default
+    * --> we want tables because we'll add more options down the road
+√ forms
+    √ standard forms
+    √ fieldsets
+* images
+    * options???
 * helpers
     * background
     * color
@@ -49,3 +50,12 @@
     * badges ?
 * plugins
     * syntax highlighting
+
+# Getting Started
+
+* installation
+    * css
+    * scss / sass
+    * rails
+* customization / configuration
+* documentation / file structure
