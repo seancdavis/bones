@@ -1,3 +1,5 @@
+# Buttons
+
 ## Markup
 
 Buttons can be used as `<a>` elements with a `button` class, or they can be `<button>` elements, or they can be `<input>` elements.

@@ -1,6 +1,10 @@
-## Tables
+# Tables
 
-We've kept tables very simple for v1.0, but plan to do much customizing in the future. Today, you build tables as you typically would, and you have some options for how to customize it:
+We've kept tables very simple for v1.0, but plan to do much customizing in the future. 
+
+## Standard Tables
+
+Today, you build tables as you typically would, and you have some options for how to customize it:
 
     <table>
       <thead>
