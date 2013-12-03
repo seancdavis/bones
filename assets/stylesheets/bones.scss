@@ -1,71 +1,61 @@
-/*
-==========================
-Bones CSS Framework
-==========================
-
-This is the manifest file for Bones' CSS. It's purpose is to bring all files together.
-
---------------------------
-
-docs on using files coming ...
-
-*/
+/*! Bones CSS Framework | v1.0 | Sean C. Davis | MIT License | git.io/imidoQ */
 
 /*
---------------------------
-VENDOR ASSETS
--------------------------- */
-@import 
-  'vendor/normalize'; // normalizes for cross-browser consistency
+ * 
+ * Welcome to Bones CSS Framework!
+ * 
+ * This is the manifest file for Bones' CSS. It brings all files 
+ * together.
+ *
+ * To add or remove modules, simply comment or uncomment and then 
+ * use Compass to recompile and compress.
+ *
+ * Files are noted as recommended and required where applicable.
+ *
+ * Refer to the ../docs/ directory for more detailed instruction.
+ * 
+ */
 
-/*
---------------------------
-CONFIG
--------------------------- */
-@import 
-  'config/colors',
-  'config/_default',
-  'config/wireframe',
-  'config/typography',
-  'config/buttons',
-  'config/forms',
-  'config/tables',
-  'config/nav',
-  'config/images',
-  'config/components',
-  'config/helpers';
+/* Vendor
+============================ */
+@import 'vendor/normalize'; // normalizes for cross-browser consistency
+  
+/* Config
+============================ */
+@import 'config/colors';
+@import 'config/_default';
+@import 'config/wireframe';
+@import 'config/typography';
+@import 'config/buttons';
+@import 'config/forms';
+@import 'config/tables';
+@import 'config/nav';
+@import 'config/images';
+@import 'config/components';
+@import 'config/helpers';
 
-/*
---------------------------
-STYLES
--------------------------- */
-@import 
-  'styles/_default',
-  'styles/wireframe',
-  'styles/typography',
-  'styles/buttons',
-  'styles/forms',
-  'styles/tables',
-  'styles/nav',
-  'styles/images',
-  'styles/components';
+/* Styles
+============================ */
+@import 'styles/_default';
+@import 'styles/wireframe';
+@import 'styles/typography';
+@import 'styles/buttons';
+@import 'styles/forms';
+@import 'styles/tables';
+@import 'styles/nav';
+@import 'styles/images';
+@import 'styles/components';
 
-/*
---------------------------
-HELPERS
--------------------------- */
-@import 
-  'helpers/margin',
-  'helpers/padding',
-  'helpers/positioning',
-  'helpers/color',
-  'helpers/background',
-  'helpers/border',
-  'helpers/size';
+/* Helpers
+============================ */
+@import 'helpers/margin';
+@import 'helpers/padding';
+@import 'helpers/positioning';
+@import 'helpers/color';
+@import 'helpers/background';
+@import 'helpers/border';
+@import 'helpers/size';
 
-/*
---------------------------
-PLUGINS
--------------------------- */
-@import 
-  'plugins/syntax_highlighting';
+/* Plugins
+============================ */
+// @import 'plugins/syntax_highlighting';
