@@ -1,12 +1,12 @@
 @mixin form-global() {
   display: block;
-  margin: $form-margin;
-  width: $form-width;
-  box-sizing: $form-box-sizing;
-  border: $form-border;
+  margin: $form-input-margin;
+  width: $form-input-width;
+  box-sizing: $form-input-boxSizing;
+  border: $form-input-border;
   &:focus {
-    outline: $form-focus-outline;
-    border: $form-focus-border;
+    outline: $form-input-outline-focus;
+    border: $form-input-border-focus;
   }
 }
 
@@ -58,8 +58,8 @@ form {
   fieldset {
     border: $form-fieldset-border;
     legend {
-      font-weight: $form-fieldset-legend-font-weight;
-      padding: $form-fieldset-legend-padding;
+      font-weight: $form-legend-fontWeight;
+      padding: $form-legend-padding;
     }
   }
 }

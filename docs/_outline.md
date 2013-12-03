@@ -16,12 +16,12 @@
     √ block-level elements
     √ inline elements
     √ lists
-* buttons
-    * markup
-    * sizes
-    * colors
-    * block-level
-    * disabled
+√ buttons
+    √ markup
+    √ sizes
+    √ colors
+    √ block-level
+    √ disabled
 * forms
     * standard forms
     * fieldsets
