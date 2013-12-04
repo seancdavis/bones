@@ -4,7 +4,7 @@ Bones really works best when you can alter it to match the desired configuration
 
 ## Directory Structure
 
-While you can refer to the `file-structure.md` doc for more detailed information on how the entire project directory is configured, we'll look at the `assets/stylesheets` directory here. Our structure is such:
+Our structure is such:
 
 ```bash
 + stylesheets/
