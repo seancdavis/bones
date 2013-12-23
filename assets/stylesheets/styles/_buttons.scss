@@ -37,63 +37,63 @@ input[type=submit], form > input[type=submit] {
 
 /* Size Factors
 ============================ */
-button.huge, a.button.huge {
+button.huge, a.button-huge {
   font-size: $button-sizeFactor-huge;
 }
 
-button.large, a.button.large {
+button.large, a.button-large {
   font-size: $button-sizeFactor-large;
 }
 
-button.small, a.button.small {
+button.small, a.button-small {
   font-size: $button-sizeFactor-small;
 }
 
 /* Colors
 ============================ */
-button.color-1, a.button.color-1 {
+button.color-1, a.button-color-1 {
   @include button($color-light, $color-1, $color-1-dark, $color-1-darker);
 }
 
-button.color-2, a.button.color-2 {
+button.color-2, a.button-color-2 {
   @include button($color-light, $color-2, $color-2-dark, $color-2-darker);
 }
 
-button.color-3, a.button.color-3 {
+button.color-3, a.button-color-3 {
   @include button($color-light, $color-3, $color-3-dark, $color-3-darker);
 }
 
-button.color-4, a.button.color-4 {
+button.color-4, a.button-color-4 {
   @include button($color-light, $color-4, $color-4-dark, $color-4-darker);
 }
 
-button.color-5, a.button.color-5 {
+button.color-5, a.button-color-5 {
   @include button($color-light, $color-5, $color-5-dark, $color-5-darker);
 }
 
-button.dark, a.button.dark {
+button.dark, a.button-dark {
   @include button($color-light, $color-dark, $color-dark-light, $color-dark-lightest);
 }
 
-button.light, a.button.light {
+button.light, a.button-light {
   @include button($color-dark, $color-light-dark, $color-light-darker, $color-light-darkest);
 }
 
-button.success, a.button.success {
+button.success, a.button-success {
   @include button($color-light, $color-success, $color-success-dark, $color-success-darker);
 }
 
-button.notice, a.button.notice {
+button.notice, a.button-notice {
   @include button($color-light, $color-warning, $color-warning-dark, $color-warning-darker);
 }
 
-button.alert, a.button.alert {
+button.alert, a.button-alert {
   @include button($color-light, $color-danger, $color-danger-dark, $color-danger-darker);
 }
 
 /* Block-Level
 ============================ */
-button.block, a.button.block, input[type=submit].block, form > input[type=submit].block {
+button.block, a.button-block, input[type=submit].block, form > input[type=submit].block {
   @include button($button-default-color, $button-default-background, $button-default-background-hover, $button-default-background-active);
   display: block;
   width: 100%;
