@@ -110,7 +110,7 @@ button, input[type=submit], form > input[type=submit] {
   }
 }
 
-a.button.disabled, .button.disabled {
+a.button.disabled, .button-disabled {
   @include button($color-dark-lightest, $color-dark-lighter, $color-dark-lighter, $color-dark-lighter);
   &:hover {
     cursor: default;

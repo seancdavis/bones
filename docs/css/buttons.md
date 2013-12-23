@@ -26,10 +26,10 @@ Using the `<button>` example, here are the types available to you:
 And using the `<a>` equivalent, these will match the buttons above:
 
 ```html
-<a class="button huge">Huge</a>
-<a class="button large">Large</a>
-<a class="button default">Default</a>
-<a class="button small">Small</a>
+<a class="button-huge">Huge</a>
+<a class="button-large">Large</a>
+<a class="button-default">Default</a>
+<a class="button-small">Small</a>
 ```
 
 
@@ -56,16 +56,16 @@ And these would match:
 
 ```html
 <a class="button">Default</a>
-<a class="button primary">Primary</a>
-<a class="button accent-1">Accent 1</a>
-<a class="button accent-2">Accent 2</a>
-<a class="button accent-3">Accent 3</a>
-<a class="button accent-4">Accent 4</a>
-<a class="button dark">Dark</a>
-<a class="button light">Light</a>
-<a class="button success">Success</a>
-<a class="button notice">Notice</a>
-<a class="button alert">Alert</a>
+<a class="button-color-1">Primary</a>
+<a class="button-color-1">Accent 1</a>
+<a class="button-color-2">Accent 2</a>
+<a class="button-color-3">Accent 3</a>
+<a class="button-color-4">Accent 4</a>
+<a class="button-dark">Dark</a>
+<a class="button-light">Light</a>
+<a class="button-success">Success</a>
+<a class="button-notice">Notice</a>
+<a class="button-alert">Alert</a>
 ```
 
 ## Block
@@ -79,7 +79,7 @@ Block level buttons stretch across the width available to them.
 Or:
 
 ```html
-<a class="button block">Block</a>
+<a class="button-block">Block</a>
 ```
 
 Or:
@@ -94,6 +94,6 @@ Disabled buttons are greyed out and can not be clicked.
 
 ```html
 <button disabled>Disabled</button>
-<a class="button disabled">Disabled</a>
+<a class="button-disabled">Disabled</a>
 <input type="submit" disabled>
 ```
