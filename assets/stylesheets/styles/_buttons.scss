@@ -51,23 +51,23 @@ button.small, a.button.small {
 
 /* Colors
 ============================ */
-button.primary, a.button.primary {
+button.color-1, a.button.color-1 {
   @include button($color-light, $color-1, $color-1-dark, $color-1-darker);
 }
 
-button.accent-1, a.button.accent-1 {
+button.color-2, a.button.color-2 {
   @include button($color-light, $color-2, $color-2-dark, $color-2-darker);
 }
 
-button.accent-2, a.button.accent-2 {
+button.color-3, a.button.color-3 {
   @include button($color-light, $color-3, $color-3-dark, $color-3-darker);
 }
 
-button.accent-3, a.button.accent-3 {
+button.color-4, a.button.color-4 {
   @include button($color-light, $color-4, $color-4-dark, $color-4-darker);
 }
 
-button.accent-4, a.button.accent-4 {
+button.color-5, a.button.color-5 {
   @include button($color-light, $color-5, $color-5-dark, $color-5-darker);
 }
 

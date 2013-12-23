@@ -2,6 +2,7 @@
 ============================ */
 @mixin notification($bg) {
   width: 100%;
+  box-sizing: border-box;
   padding: $component-notification-padding;
   margin: $component-notification-margin;  
   background: $bg;
