@@ -31,6 +31,10 @@ form {
     @include form-global();
     @include form-input();
   }
+  input[type=url] {
+    @include form-global();
+    @include form-input();
+  }
   textarea {
     @include form-global();
     @include form-input();
