@@ -1,28 +1,43 @@
+@mixin button-color($background-color: $action-color, $color: $light) {
+  background-color: $background-color;
+  color: $color;
+
+  &:hover,
+  &:focus {
+    background-color: shade($background-color, 10%);
+    color: $color;
+  }
+}
+
 @mixin button {
+  @include button-color;
   appearance: none;
-  background-color: $action-color;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-family: $base-font-family;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
   padding: $small-spacing $base-spacing;
+  margin: $small-spacing 0;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover,
-  &:focus {
-    background-color: shade($action-color, 20%);
-    color: #fff;
+  @include media($small) {
+    display: inline-block;
+    margin: $small-spacing $small-spacing 0 0;
   }
+
+  &:hover, &:focus {
+    outline: none;
+  }
+
 
   &:disabled, &[disabled='true'] {
     cursor: not-allowed;
@@ -36,4 +51,12 @@
 
 #{$all-buttons} {
   @include button;
+}
+
+@mixin large-button($include-button: true) {
+  @if $include-button == true {
+    @include button;
+  }
+  padding: $small-spacing $large-spacing;
+  font-size: 1.5em;
 }

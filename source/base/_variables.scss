@@ -8,6 +8,7 @@ $base-font-size: 1em !default;
 $em-base: 16px !default;
 $modular-scale-ratio: $perfect-fourth !default;
 $modular-scale-base: rem($em-base) !default;
+$fine-print: 0.75em;
 
 // Line height
 $base-line-height: 1.5 !default;
@@ -16,6 +17,7 @@ $heading-line-height: 1.2 !default;
 // Other Sizes
 $base-border-radius: 3px !default;
 $base-spacing: $base-line-height * 1em !default;
+$large-spacing: $base-spacing * 2 !default;
 $small-spacing: $base-spacing / 2 !default;
 $base-z-index: 0 !default;
 
@@ -30,12 +32,17 @@ $yellow: #F5C43C !default;
 $dark: #444 !default;
 $dk-grey: #333 !default;
 $md-grey: #999 !default;
+$grey: $md-grey !default;
 $lt-grey: #ddd !default;
 $light: #fff !default;
 
+$primary: $blue !default;
+$error: $red !default;
+$success: $green !default;
+
 // Font Colors
 $base-font-color: $dk-grey !default;
-$action-color: $blue !default;
+$action-color: $primary !default;
 
 // Border
 $base-border-color: $lt-grey !default;
@@ -45,10 +52,33 @@ $base-border: 1px solid $base-border-color !default;
 $base-background-color: $light !default;
 $secondary-background-color: tint($base-border-color, 75%) !default;
 
-// Forms
-$form-box-shadow: inset 0 1px 3px rgba($dark, 0.06) !default;
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3) !default;
+// Form Inputs
+$input-box-shadow: none !default;
+$input-box-shadow-focus: none !default;
+$input-border: 1px solid transparent !default;
+$input-border-color-focus: $primary !default;
+$input-background-color: transparent !default;
+$input-color: $base-font-color !default;
+$input-padding: $base-spacing / 3 !default;
+
+// Form Labels
+$label-color: $base-font-color !default;
+$label-font-size: $base-font-size !default;
+$label-font-weight: 600 !default;
+$label-text-transform: none !default;
+
+// Shadows
+$base-box-shadow: 1px 1px 5px $dk-grey;
+$reverse-box-shadow: -1px 1px 5px $dk-grey;
 
 // Animations
 $base-duration: 150ms !default;
 $base-timing: ease !default;
+
+// Images
+$all-images: img, svg;
+
+// Media Queries
+$small: 500px;
+$medium: 767px;
+$large: 1200px;

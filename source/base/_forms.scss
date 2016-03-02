@@ -12,9 +12,12 @@ legend {
 }
 
 label {
+  color: $label-color;
   display: block;
-  font-weight: 600;
+  font-size: $label-font-size;
+  font-weight: $label-font-weight;
   margin-bottom: $small-spacing / 2;
+  text-transform: $label-text-transform;
 }
 
 input,
@@ -26,15 +29,16 @@ select {
 
 #{$all-text-inputs},
 select[multiple] {
-  background-color: $base-background-color;
-  border: $base-border;
+  background-color: $input-background-color;
+  border: $input-border;
   border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
+  box-shadow: $input-box-shadow;
   box-sizing: border-box;
+  color: $input-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  padding: $input-padding;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
@@ -43,8 +47,8 @@ select[multiple] {
   }
 
   &:focus {
-    border-color: $action-color;
-    box-shadow: $form-box-shadow-focus;
+    border-color: $input-border-color-focus;
+    box-shadow: $input-box-shadow-focus;
     outline: none;
   }
 
