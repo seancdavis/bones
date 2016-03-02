@@ -1,1 +1,14 @@
 @import '../source/bones/bones';
+
+#container {
+  @include outer-container(rem(800px));
+}
+
+section {
+  border-bottom: $base-border;
+}
+
+.button {
+  @include button;
+  margin: $small-spacing $small-spacing 0 0;
+}

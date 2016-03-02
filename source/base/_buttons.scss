@@ -1,4 +1,4 @@
-#{$all-buttons} {
+@mixin button {
   appearance: none;
   background-color: $action-color;
   border: 0;
@@ -24,7 +24,7 @@
     color: #fff;
   }
 
-  &:disabled {
+  &:disabled, &[disabled='true'] {
     cursor: not-allowed;
     opacity: 0.5;
 
@@ -32,4 +32,8 @@
       background-color: $action-color;
     }
   }
+}
+
+#{$all-buttons} {
+  @include button;
 }
