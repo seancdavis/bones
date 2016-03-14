@@ -1,0 +1,47 @@
+@mixin menu-fixed-left($width: auto,
+                       $background-color: transparent) {
+  @include position(fixed, 0 null null 0);
+  z-index: $z3;
+  @include size($width 100vh);
+  background-color: $background-color;
+  li {
+    display: block;
+  }
+}
+
+@mixin menu-fixed-full($background-color: transparent) {
+  @include position(fixed, 0 null null 0);
+  z-index: $z4;
+  @include size(100vw 100vh);
+  background-color: $background-color;
+}
+
+@mixin menu-icon-blocks($size: 200px,
+                        $padding: 0,
+                        $background-color: transparent,
+                        $color: $dark) {
+  font-size: 0;
+  @include transition(all 0.35s ease);
+  li {
+    display: inline-block;
+    position: relative;
+    @include size($size);
+    font-size: $em-base;
+    > a {
+      @include position(absolute, 0 null null 0);
+      @include size(100%);
+      padding: $padding;
+      background-color: $background-color;
+      @include transition(all 0.35s ease);
+    }
+    svg, img, i {
+      display: block;
+    }
+    span {
+      display: block;
+      text-align: center;
+      font-weight: 600;
+      color: $color;
+    }
+  }
+}

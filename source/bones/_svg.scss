@@ -1,0 +1,14 @@
+@mixin svg-state-toggle {
+  > g {
+    @include transition(all 0.35s ease);
+  }
+  &.active > g {
+    opacity: 0;
+    &.active-state {
+      opacity: 1;
+    }
+  }
+  > g.active-state {
+    opacity: 0;
+  }
+}

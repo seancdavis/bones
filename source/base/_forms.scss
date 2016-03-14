@@ -86,3 +86,8 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+form .error {
+  display: inline-block;
+  color: $error;
+}

@@ -1,6 +1,7 @@
 @mixin sticky-footer {
   @include position(fixed, null null 0 0);
   width: 100%;
+  z-index: $z2;
 
   span {
     display: inline-block;

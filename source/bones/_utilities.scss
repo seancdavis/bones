@@ -1,4 +1,4 @@
-@mixin reverse-out($background: $primary, $color: $light) {
-  background-color: $background;
-  color: $color;
+@mixin color($background: null, $color: null) {
+  @if $background { background-color: $background; }
+  @if $color { color: $color; }
 }

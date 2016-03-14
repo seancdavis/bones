@@ -1,0 +1,29 @@
+@mixin notice-base($background-color: $primary,
+                   $color: $light) {
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  z-index: $z4;
+  font-size: 1.5em;
+  text-align: center;
+  color: $color;
+  background: rgba($background-color, 0.9);
+}
+
+@mixin notice-fixed($background-color: $primary,
+                    $color: $light) {
+  @include notice-base($background-color, $color);
+  @include position(fixed, null null null 0);
+}
+
+@mixin notice-bottom($background-color: $primary,
+                     $color: $light) {
+  @include notice-fixed($background-color, $color);
+  bottom: 0;
+}
+
+@mixin notice-top($background-color: $primary,
+                     $color: $light) {
+  @include notice-fixed($background-color, $color);
+  top: 0;
+}

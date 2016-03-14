@@ -8,7 +8,7 @@ $base-font-size: 1em !default;
 $em-base: 16px !default;
 $modular-scale-ratio: $perfect-fourth !default;
 $modular-scale-base: rem($em-base) !default;
-$fine-print: 0.75em;
+$fine-print: 0.75em !default;
 
 // Line height
 $base-line-height: 1.5 !default;
@@ -68,17 +68,25 @@ $label-font-weight: 600 !default;
 $label-text-transform: none !default;
 
 // Shadows
-$base-box-shadow: 1px 1px 5px $dk-grey;
-$reverse-box-shadow: -1px 1px 5px $dk-grey;
+$base-box-shadow: 1px 1px 5px $dk-grey !default;
+$reverse-box-shadow: -1px 1px 5px $dk-grey !default;
 
 // Animations
 $base-duration: 150ms !default;
 $base-timing: ease !default;
 
 // Images
-$all-images: img, svg;
+$all-images: img, svg !default;
 
 // Media Queries
-$small: 500px;
-$medium: 767px;
-$large: 1200px;
+$small: 500px !default;
+$medium: 767px !default;
+$large: 1200px !default;
+
+// Arrangement
+$z0: 0 !default;
+$z1: 9 !default;
+$z2: 99 !default;
+$z3: 999 !default;
+$z4: 9999 !default;
+$z5: 99999 !default;
